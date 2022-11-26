@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <title>Седона-официальный сайт</title>
@@ -11,12 +11,12 @@
   <link rel="icon" href="favicon.ico">
 </head>
 
-<body class="body body-catalog">
+<body class="page__body">
 
-  <header class="header">
+  <header class="page-header">
     <nav class="navigation">
 
-      <button class="button navigation-button" type="button">
+      <button class="button navigation-toggle-button" type="button">
         <span class="visually-hidden">открыть/закрыть меню.</span>
       </button>
       <ul class="navigation__list navigation__list--left-half">
@@ -24,12 +24,12 @@
           <a class="navigation__link" href="index.html">главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#" aria-current="page">фото и видео</a>
+          <a class="navigation__link navigation__link--current" href="#" aria-current="page">фото и видео</a>
         </li>
       </ul>
 
       <a class="navigation__link" href="index.html">
-        <img class="navigation__image" src="1" alt="Логотип сайта.">
+        <img class="navigation__image" src="img/logo.svg" alt="Логотип сайта." width="185" height="96">
       </a>
 
       <ul class="navigation__list navigation__list--right-half">
@@ -41,14 +41,14 @@
         </li>
       </ul>
     </nav>
-    <img class="header__image" src="1" alt="Надпись Sedona.">
+    <img class="header__image" src="1" alt="Надпись Sedona." width="" height="">
   </header>
 
   <main class="main">
 
-    <header class="main-header">
-      <h1 class="main-header__title">фото и видео</h1>
-      <p class="main-header__text">не можете решиться на путешествие<br> из-за курса? фотографии помогут
+    <header class="main__header">
+      <h1 class="main__title">фото и видео</h1>
+      <p class="main__text">не можете решиться на путешествие<br> из-за курса? фотографии помогут
         вам<br> забыть о политике и экономике.</p>
     </header>
 
@@ -58,28 +58,28 @@
       <ul class="photo-content__list">
 
         <li class="photo-content__item">
-          <img class="photo-content__image" src="1" alt="Местные виды.">
+          <img class="photo-content__image" src="1" alt="Местные виды." width="" height="">
           <h3 class="photo-content__title">неродные просторы</h3>
           <p class="photo-content__author-name">Автор фото: Борис</p>
           <button class="button photo-content__button" type="button">1350</button>
         </li>
 
         <li class="photo-content__item">
-          <img class="photo-content__image" src="1" alt="Местные виды.">
+          <img class="photo-content__image" src="1" alt="Местные виды." width="" height="">
           <h3 class="photo-content__title">местная растительность</h3>
           <p class="photo-content__author-name">Автор фото: Сергей</p>
           <button class="button photo-content__button" type="button">143</button>
         </li>
 
         <li class="photo-content__item">
-          <img class="photo-content__image" src="1" alt="Местные виды.">
+          <img class="photo-content__image" src="1" alt="Местные виды." width="" height="">
           <h3 class="photo-content__title">дорога на север</h3>
           <p class="photo-content__author-name">Автор фото: Петр</p>
           <button class="button photo-content__button" type="button">96</button>
         </li>
 
         <li class="photo-content__item">
-          <img class="photo-content__image" src="1" alt="Местные виды.">
+          <img class="photo-content__image" src="1" alt="Местные виды." width="" height="">
           <h3 class="photo-content__title">мост дьявола</h3>
           <p class="photo-content__author-name">Автор фото: Антон</p>
           <button class="button photo-content__button" type="button">254</button>
@@ -96,7 +96,7 @@
         <p class="video-content__text">смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали
           в очередной раз!</p>
       </header>
-      <img class="video-content__image" src="1" alt="начальный экран видео местности.">
+      <img class="video-content__image" src="1" alt="начальный экран видео о местности." width="" height="">
     </section>
 
   </main>
