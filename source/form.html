@@ -21,13 +21,20 @@
       <button class="button navigation-button" type="button">
         <span class="visually-hidden">открыть/закрыть меню.</span>
       </button>
-      <ul class="navigation__list">
+      <ul class="navigation__list navigation__list--left-half">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html">главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html">фото и видео</a>
         </li>
+      </ul>
+
+      <a class="navigation__link" href="index.html">
+        <img class="navigation__image" src="1" alt="Логотип сайта.">
+      </a>
+
+      <ul class="navigation__list navigation__list--right-half">
         <li class="navigation__item">
           <a class="navigation__link" href="#" aria-current="page">форма отзыва</a>
         </li>
@@ -37,15 +44,15 @@
       </ul>
     </nav>
     <img class="header__image" src="1" alt="Надпись Sedona.">
-    <section class="slogan-section">
-      <h2 class="slogan-section__title">оставьте свой отзыв</h2>
-      <p class="slogan-section__text">помогите нашим отелям стать лучше!<br> оставьте отзыв о<br> них, а также о
-        посещенных вами<br> достопримечательностях</p>
-    </section>
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">страница обратной связи</h1>
+
+    <header class="main-header">
+      <h1 class="main-header__title">оставьте свой отзыв</h1>
+      <p class="main-header__text">помогите нашим отелям стать лучше!<br> оставьте отзыв о<br> них, а также о
+        посещенных вами<br> достопримечательностях</p>
+    </header>
 
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="feedback-form__group">

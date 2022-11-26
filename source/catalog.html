@@ -15,19 +15,24 @@
 
   <header class="header">
     <nav class="navigation">
-      <a class="navigation__link" href="index.html">
-        <img class="navigation__image" src="1" alt="Логотип сайта.">
-      </a>
+
       <button class="button navigation-button" type="button">
         <span class="visually-hidden">открыть/закрыть меню.</span>
       </button>
-      <ul class="navigation__list">
+      <ul class="navigation__list navigation__list--left-half">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html">главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#" aria-current="page">фото и видео</a>
         </li>
+      </ul>
+
+      <a class="navigation__link" href="index.html">
+        <img class="navigation__image" src="1" alt="Логотип сайта.">
+      </a>
+
+      <ul class="navigation__list navigation__list--right-half">
         <li class="navigation__item">
           <a class="navigation__link" href="form.html">форма отзыва</a>
         </li>
@@ -37,46 +42,47 @@
       </ul>
     </nav>
     <img class="header__image" src="1" alt="Надпись Sedona.">
-    <section class="slogan-section">
-      <h2 class="slogan-section__title">фото и видео</h2>
-      <p class="slogan-section__text">не можете решиться на путешествие<br> из-за курса? фотографии помогут
-        вам<br> забыть о политике и экономике.</p>
-    </section>
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">страница с фото и видео</h1>
 
+    <header class="main-header">
+      <h1 class="main-header__title">фото и видео</h1>
+      <p class="main-header__text">не можете решиться на путешествие<br> из-за курса? фотографии помогут
+        вам<br> забыть о политике и экономике.</p>
+    </header>
 
-    <section class="content">
-      <ul class="content__list">
+    <section class="photo-content">
+      <h2 class="visually-hidden">Раздел с фото.</h2>
 
-        <li class="content__item">
-          <img class="content__image" src="1" alt="Местные виды.">
-          <h2 class="content__title">неродные просторы</h2>
-          <p class="content__author-name">Автор фото: Борис</p>
-          <button class="button content__button" type="button">1350</button>
+      <ul class="photo-content__list">
+
+        <li class="photo-content__item">
+          <img class="photo-content__image" src="1" alt="Местные виды.">
+          <h3 class="photo-content__title">неродные просторы</h3>
+          <p class="photo-content__author-name">Автор фото: Борис</p>
+          <button class="button photo-content__button" type="button">1350</button>
         </li>
 
-        <li class="content__item">
-          <img class="content__image" src="1" alt="Местные виды.">
-          <h2 class="content__title">местная растительность</h2>
-          <p class="content__author-name">Автор фото: Сергей</p>
-          <button class="button content__button" type="button">143</button>
+        <li class="photo-content__item">
+          <img class="photo-content__image" src="1" alt="Местные виды.">
+          <h3 class="photo-content__title">местная растительность</h3>
+          <p class="photo-content__author-name">Автор фото: Сергей</p>
+          <button class="button photo-content__button" type="button">143</button>
         </li>
 
-        <li class="content__item">
-          <img class="content__image" src="1" alt="Местные виды.">
-          <h2 class="content__title">дорога на север</h2>
-          <p class="content__author-name">Автор фото: Петр</p>
-          <button class="button content__button" type="button">96</button>
+        <li class="photo-content__item">
+          <img class="photo-content__image" src="1" alt="Местные виды.">
+          <h3 class="photo-content__title">дорога на север</h3>
+          <p class="photo-content__author-name">Автор фото: Петр</p>
+          <button class="button photo-content__button" type="button">96</button>
         </li>
 
-        <li class="content__item">
-          <img class="content__image" src="1" alt="Местные виды.">
-          <h2 class="content__title">мост дьявола</h2>
-          <p class="content__author-name">Автор фото: Антон</p>
-          <button class="button content__button" type="button">254</button>
+        <li class="photo-content__item">
+          <img class="photo-content__image" src="1" alt="Местные виды.">
+          <h3 class="photo-content__title">мост дьявола</h3>
+          <p class="photo-content__author-name">Автор фото: Антон</p>
+          <button class="button photo-content__button" type="button">254</button>
         </li>
 
       </ul>
@@ -84,9 +90,12 @@
 
     <section class="video-content">
       <h2 class="visually-hidden">Раздел с видео контентом.</h2>
-      <p class="video-content__slogan">все еще сомневаетесь?</p>
-      <p class="video-content__text">смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в
-        очередной раз!</p>
+
+      <header class="video-content__header">
+        <p class="video-content__slogan">все еще сомневаетесь?</p>
+        <p class="video-content__text">смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали
+          в очередной раз!</p>
+      </header>
       <img class="video-content__image" src="1" alt="начальный экран видео местности.">
     </section>
 
