@@ -1,12 +1,19 @@
+.footer {
+  padding: 39px 0 23px 0;
+}
+
+
 .footer__hashtag-link {
   @include fontsizes(21px, 26px, 700, $black);
   display: flex;
+  margin-bottom: 34px;
   justify-content: center;
   text-transform: uppercase;
 }
 
 .footer__list {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
 }

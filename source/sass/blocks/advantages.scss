@@ -1,9 +1,3 @@
-.advantages__slogan {
-  @include fontsizes(14px, 21px, 400, $light-black);
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -13,6 +7,7 @@
 
 .advantages__item {
   background-color: $white;
+  padding: 37px 0 37px 0;
 }
 
 .advantages__item--blue {
@@ -22,6 +17,8 @@
 
 .advantages__title {
   @include fontsizes(18px, 26px, 700, $black);
+  margin: 0;
+  margin-bottom: 11px;
   text-align: center;
 }
 
@@ -34,6 +31,10 @@
   text-align: center;
 }
 
+.advantages__text:not(:last-child) {
+  margin-bottom: 17px;
+}
+
 .advantages__text--white {
   color: $white;
 }
@@ -42,4 +43,5 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: $white;
 }

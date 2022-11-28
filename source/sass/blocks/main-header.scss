@@ -1,7 +1,13 @@
-.main-header__title {
+.main__title {
   @include fontsizes(18px, 26px, 700, $black);
+  margin: 0;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.main-header__text {
+.main__text {
   @include fontsizes(14px, 21px, 400, $light-black);
+  text-transform: uppercase;
+  text-align: center;
 }

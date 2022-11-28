@@ -1,5 +1,6 @@
 .feedback-form__title {
   @include fontsizes(18px, 26px, 700, $black);
+  margin: 0;
 }
 
 .feedback-form__label {
