@@ -1,0 +1,23 @@
+.feedback-form__title {
+  @include fontsizes(18px, 26px, 700, $black);
+}
+
+.feedback-form__label {
+  @include fontsizes(14px, 21px, 400, $light-black);
+}
+
+.feedback-form__input::placeholder {
+  @include fontsizes(18px, 26px, 700, $black);
+}
+
+.feedback-form__input--contact::placeholder {
+  opacity: 0.3;
+}
+
+.feedback-form__label--impression {
+  @include fontsizes(18px, 26px, 700, $black);
+}
+
+.feedback-form__label--attractions {
+  @include fontsizes(18px, 26px, 700, $black);
+}

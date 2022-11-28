@@ -1,0 +1,45 @@
+.advantages__slogan {
+  @include fontsizes(14px, 21px, 400, $light-black);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.advantages__item {
+  background-color: $white;
+}
+
+.advantages__item--blue {
+  color: $white;
+  background-color: $blue;
+}
+
+.advantages__title {
+  @include fontsizes(18px, 26px, 700, $black);
+  text-align: center;
+}
+
+.advantages__title--white {
+  color: $white;
+}
+
+.advantages__text {
+  @include fontsizes(14px, 21px, 400, $light-black);
+  text-align: center;
+}
+
+.advantages__text--white {
+  color: $white;
+}
+
+.advantages__advantages-city-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

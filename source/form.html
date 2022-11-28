@@ -7,7 +7,7 @@
   <meta name="keywords" content="Седона, город, туризм">
   <meta name="description"
     content="Официальный сайт города Седона. Здесь Вы можете найти всю информацию о нашем городе и о наличии свободных мест в гостиницах">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -15,6 +15,10 @@
 
   <header class="page-header">
 
+<<<<<<< Updated upstream
+=======
+  <header class="page-header">
+>>>>>>> Stashed changes
     <nav class="navigation">
       <button class="button navigation-toggle-button" type="button">
         <span class="visually-hidden">открыть/закрыть меню.</span>
@@ -66,24 +70,27 @@
       <fieldset class="feedback-form__group">
         <legend class="feedback-form__title">контактная информация:*</legend>
         <label class="feedback-form__label" for="name">Контактный телефон*</label>
-        <input class="feedback-form__input" type="text" id="telephone" name="telephone" placeholder="введите телефон">
+        <input class="feedback-form__input feedback-form__input--contact" type="text" id="telephone" name="telephone"
+          placeholder="введите телефон">
         <label class="feedback-form__label" for="email">Электронная почта*:</label>
-        <input class="feedback-form__input" type="email" id="email" name="email" placeholder="введите e-mail">
+        <input class="feedback-form__input feedback-form__input--contact" type="email" id="email" name="email"
+          placeholder="введите e-mail">
       </fieldset>
 
       <fieldset class="feedback-form__group">
         <legend class="feedback-form__title">ваше общее впечатление:</legend>
-        <label class="feedback-form__label" for="good">cкорее положительное</label>
+        <label class="feedback-form__label feedback-form__label--impression" for="good">cкорее положительное</label>
         <input class="feedback-form__input" type="radio" id="good" name="impression" checked>
-        <label class="feedback-form__label" for="bad">cкорее отрицательное</label>
+        <label class="feedback-form__label feedback-form__label--impression" for="bad">cкорее отрицательное</label>
         <input class="feedback-form__input" type="radio" id="bad" name="impression">
-        <label class="feedback-form__label" for="no-answer">затрудняюсь ответить</label>
+        <label class="feedback-form__label feedback-form__label--impression" for="no-answer">затрудняюсь
+          ответить</label>
         <input class="feedback-form__input" type="radio" id="no-answer" name="impression">
       </fieldset>
 
       <fieldset class="feedback-form__group">
         <legend class="feedback-form__title">посещенные достопримечательности:</legend>
-        <label class="feedback-form__label" for="devils-bridge">мост дьявола</label>
+        <label class="feedback-form__label feedback-form__label--attractions" for="devils-bridge">мост дьявола</label>
         <input class="feedback-form__input" type="checkbox" id="devils-bridge" name="attractions" checked>
         <label class="feedback-form__label" for="the-bell-mountain">гора-колокол</label>
         <input class="feedback-form__input" type="checkbox" id="the-bell-mountain" name="attractions" checked>
@@ -106,27 +113,28 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__link"
+    <a class="footer__hashtag-link"
       href="https://www.yandex.ru/search/?lr=10754&offline_search=1&text=%23visitsedona&clid=2196598&from=chromesearch">#visitsedona</a>
     <ul class="footer__list">
       <li class="footer__item">
-        <a class="footer__link footer__link--vk" href="https://vk.com/htmlacademy">
+        <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Вконтакте.</span>
         </a>
       </li>
       <li class="footer__item">
-        <a class="footer__link footer__link--tlgm" href="https://t.me/htmlacademy">
+        <a class="footer__social-link footer__social-link--tlgm" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Телеграмм.</span>
         </a>
       </li>
       <li class="footer__item">
-        <a class="footer__link footer__link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS">
+        <a class="footer__social-link footer__social-link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS">
           <span class="visually-hidden">Ютуб.</span>
         </a>
       </li>
     </ul>
-    <p class="footer__text">сделано</p>
-    <a class="footer__link footer__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
+
+    <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <p class="footer__text">сделано</p>
       <span class="visually-hidden">ссылка на Htmlacademy.ru.</span>
     </a>
   </footer>
