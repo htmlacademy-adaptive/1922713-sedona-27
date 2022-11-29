@@ -6,13 +6,27 @@
 }
 
 .advantages__item {
-  background-color: $white;
   padding: 37px 0 37px 0;
 }
 
-.advantages__item--blue {
+.advantages__item--has-image {
   color: $white;
   background-color: $blue;
+}
+
+.advantages__item--has-line {
+  position: relative;
+  background-color: $gray;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 284px;
+    height: 1px;
+    background-color: $darkgray;
+    top: 10px;
+    left: 10px;
+  }
 }
 
 .advantages__title {
@@ -22,7 +36,7 @@
   text-align: center;
 }
 
-.advantages__title--white {
+.advantages__title--has-image {
   color: $white;
 }
 
@@ -35,7 +49,7 @@
   margin-bottom: 17px;
 }
 
-.advantages__text--white {
+.advantages__text--has-image {
   color: $white;
 }
 

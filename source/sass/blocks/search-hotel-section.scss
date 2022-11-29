@@ -1,8 +1,8 @@
-.subsribe-section {
+.search-hotel-section {
   padding: 38px 0 49px 0;
 }
 
-.subsribe-section__title {
+.search-hotel-section__title {
   @include fontsizes(21px, 26px, 700, $black);
   margin: 0;
   margin-bottom: 28px;
@@ -10,14 +10,14 @@
   text-transform: uppercase;
 }
 
-.subsribe-section__text {
+.search-hotel-section__text {
   @include fontsizes(14px, 21px, 700, $light-black);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 32px;
 }
 
-.subsribe-section__link {
+.search-hotel-section__link {
   @include fontsizes(21px, 26px, 700, $white);
   display: flex;
   justify-content: center;

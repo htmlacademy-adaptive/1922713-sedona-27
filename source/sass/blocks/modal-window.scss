@@ -1,0 +1,18 @@
+.modal-window__title {
+  @include fontsizes(18px, 26px, 700, $black);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-window__text {
+  @include fontsizes(14px, 21px, 400, $light-black);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-window__button {
+  margin: 0 auto;
+  width: 180px;
+  padding: 18px 64px 14px 63px;
+  background-color: $blue;
+}

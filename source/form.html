@@ -41,7 +41,7 @@
         </li>
       </ul>
     </nav>
-    <img class="header__image" src="1" alt="Надпись Sedona." width="" height="">
+    <img class="page-header__image" src="1" alt="Надпись Sedona." width="320" height="320">
   </header>
 
   <main class="main">
@@ -53,6 +53,7 @@
     </header>
 
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <fieldset class="feedback-form__group">
         <legend class="feedback-form__title">представьтесь</legend>
         <label class="feedback-form__label" for="name">имя*</label>
@@ -63,6 +64,7 @@
         <input class="feedback-form__input" type="text" id="patronymic" name="patronymic" placeholder="викторович">
       </fieldset>
 
+      <h2 class="visually-hidden">Укажите телефон и электронную почту</h2>
       <fieldset class="feedback-form__group">
         <legend class="feedback-form__title">контактная информация:*</legend>
         <label class="feedback-form__label" for="name">Контактный телефон*</label>
@@ -73,20 +75,25 @@
           placeholder="введите e-mail">
       </fieldset>
 
+      <h2 class="visually-hidden">Укажите Ваш общее впечатление</h2>
       <fieldset class="feedback-form__group">
         <legend class="feedback-form__title">ваше общее впечатление:</legend>
-        <label class="feedback-form__label feedback-form__label--impression" for="good">cкорее положительное</label>
+        <label class="feedback-form__label feedback-form__label--impression" for="good">cкорее
+          положительное</label>
         <input class="feedback-form__input" type="radio" id="good" name="impression" checked>
-        <label class="feedback-form__label feedback-form__label--impression" for="bad">cкорее отрицательное</label>
+        <label class="feedback-form__label feedback-form__label--impression" for="bad">cкорее
+          отрицательное</label>
         <input class="feedback-form__input" type="radio" id="bad" name="impression">
         <label class="feedback-form__label feedback-form__label--impression" for="no-answer">затрудняюсь
           ответить</label>
         <input class="feedback-form__input" type="radio" id="no-answer" name="impression">
       </fieldset>
 
+      <h2 class="visually-hidden">Укажите посещенные достопримечательности:</h2>
       <fieldset class="feedback-form__group">
         <legend class="feedback-form__title">посещенные достопримечательности:</legend>
-        <label class="feedback-form__label feedback-form__label--attractions" for="devils-bridge">мост дьявола</label>
+        <label class="feedback-form__label feedback-form__label--attractions" for="devils-bridge">мост
+          дьявола</label>
         <input class="feedback-form__input" type="checkbox" id="devils-bridge" name="attractions" checked>
         <label class="feedback-form__label" for="the-bell-mountain">гора-колокол</label>
         <input class="feedback-form__input" type="checkbox" id="the-bell-mountain" name="attractions" checked>
@@ -96,6 +103,7 @@
         <input class="feedback-form__input" type="checkbox" id="red-rocks" name="attractions">
       </fieldset>
 
+      <h2 class="visually-hidden">Расскажите нам о своих эмоциях:</h2>
       <fieldset class="feedback-form__group">
         <legend class="feedback-form__title">опишите свои эмоции:</legend>
         <textarea id="emotions" name="emotions" rows="5" cols="33">Опишите подробно все свои восторги</textarea>
@@ -135,17 +143,17 @@
     </a>
   </footer>
 
-  <div class="body-form__modal-window body-form__modal-window--failure">
-    <h2 class="body-form__title">что-то пошло не так!</h2>
-    <p class="body-form__text">проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить</p>
-    <button class="button body-form__button" type="button">ок</button>
+  <div class="modal-window modal-window--failure">
+    <h2 class="modal-window__title">что-то пошло не так!</h2>
+    <p class="modal-window__text">проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить</p>
+    <button class="button modal-window__button" type="button">ок</button>
   </div>
 
-  <div class="body-form__modal-window body-form__modal-window--valid-success">
-    <h2 class="body-form__title">ваш отзыв отправлен!</h2>
-    <p class="body-form__text">спасибо за ваше участие, ваш<br> отзыв уже поступил к нам.<br> в ближайшее время мы<br>
-      опубликуем его на сайте.</p>
-    <button class="button body-form__button" type="button">закрыть окно</button>
+  <div class="modal-window modal-window--valid-success">
+    <h2 class="modal-window__title">ваш отзыв отправлен!</h2>
+    <p class="modal-window__text">спасибо за ваше участие, ваш<br> отзыв уже поступил к нам.<br> в ближайшее время
+      мы<br> опубликуем его на сайте.</p>
+    <button class="button modal-window__button" type="button">закрыть окно</button>
   </div>
 
 </body>

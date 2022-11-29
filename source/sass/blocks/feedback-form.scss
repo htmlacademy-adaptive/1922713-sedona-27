@@ -1,10 +1,19 @@
+.feedback-form__group {
+  border: none;
+}
+
 .feedback-form__title {
   @include fontsizes(18px, 26px, 700, $black);
   margin: 0;
+  text-align: center;
 }
 
 .feedback-form__label {
   @include fontsizes(14px, 21px, 400, $light-black);
+}
+
+.feedback-form__input[type="text"] {
+  padding: 16px 16px 16px 16px;
 }
 
 .feedback-form__input::placeholder {
