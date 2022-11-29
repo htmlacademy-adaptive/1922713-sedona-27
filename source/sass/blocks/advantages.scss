@@ -24,7 +24,7 @@
     width: 284px;
     height: 1px;
     background-color: $darkgray;
-    top: 10px;
+    top: 0;
     left: 10px;
   }
 }
@@ -41,7 +41,7 @@
 }
 
 .advantages__text {
-  @include fontsizes(14px, 21px, 400, $light-black);
+  @include fontsizes(14px, 21px, 400, $lightblack);
   text-align: center;
 }
 

@@ -1,26 +1,42 @@
 .feedback-form__group {
   border: none;
+
+  &:last-of-type {
+    margin-bottom: 56px;
+  }
 }
 
 .feedback-form__title {
   @include fontsizes(18px, 26px, 700, $black);
   margin: 0;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .feedback-form__label {
-  @include fontsizes(14px, 21px, 400, $light-black);
+  @include fontsizes(14px, 21px, 400, $lightblack);
+  margin-bottom: 16px;
 }
 
-.feedback-form__input[type="text"] {
-  padding: 16px 16px 16px 16px;
+.feedback-form__label--has-text {
+  text-transform: uppercase;
 }
 
-.feedback-form__input::placeholder {
+.feedback-form__input {
   @include fontsizes(18px, 26px, 700, $black);
 }
 
-.feedback-form__input--contact::placeholder {
+.feedback-form__input--has-text {
+  width: 280px;
+  padding: 16px 16px 16px 16px;
+  background-color: $lightgray;
+}
+
+.feedback-form__input--has-text::placeholder {
+  @include fontsizes(18px, 26px, 700, $black);
+}
+
+.feedback-form__input--contact-information::placeholder {
   opacity: 0.3;
 }
 
@@ -30,4 +46,40 @@
 
 .feedback-form__label--attractions {
   @include fontsizes(18px, 26px, 700, $black);
+}
+
+// .feedback-form__textarea {
+//   @include fontsizes(18px, 26px, 700, $black);
+//   width: 279px;
+//   padding: 16px 16px 16px 16px;
+//   background-color: $lightgray;
+// }
+
+.feedback-form__input--emotions {
+  width: 279px;
+  min-height: 150px;
+  padding: 16px 16px 16px 16px;
+  background-color: $lightgray;
+}
+
+.feedback-form__input--emotions::placeholder {
+  @include fontsizes(18px, 26px, 700, $black);
+  opacity: 0.3;
+  white-space: pre-wrap;
+}
+
+.feedback-form__button {
+  @include fontsizes(21px, 26px, 700, $white);
+  // width: 280px;
+  margin: 0 auto;
+  padding: 16px 49px 16px 49px;
+  text-transform: uppercase;
+  background-color: $blue;
+  // white-space: nowrap;
+}
+
+.feedback-form__text {
+  @include fontsizes(12px, 21px, 400, $lightblack);
+  text-transform: uppercase;
+  opacity: 0.6;
 }
