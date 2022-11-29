@@ -1,0 +1,41 @@
+.photo-content__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #e5e5e5;
+    left: 0;
+    right: 0;
+  }
+}
+
+.photo-content__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #e5e5e5;
+    left: 0;
+    right: 0;
+  }
+}
+
+.photo-content__title {
+  @include fontsizes(14px, 21px, 700, $black);
+  text-transform: uppercase;
+}
+
+.photo-content__author-name {
+  @include fontsizes(14px, 21px, 400, $lightblack);
+}
+
+.photo-content__button {
+  @include fontsizes(14px, 21px, 700, $black);
+}

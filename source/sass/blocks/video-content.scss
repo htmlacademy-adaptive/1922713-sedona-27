@@ -1,0 +1,16 @@
+.video-content {
+  padding-top: 17px;
+}
+
+.video-content__slogan {
+  @include fontsizes(18px, 26px, 700, $black);
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video-content__text {
+  @include fontsizes(14px, 21px, 400, $lightblack);
+  text-align: center;
+  text-transform: uppercase;
+}
