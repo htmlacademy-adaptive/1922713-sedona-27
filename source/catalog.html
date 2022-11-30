@@ -4,6 +4,7 @@
 <head>
   <title>Седона-официальный сайт</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Седона, город, туризм">
   <meta name="description"
     content="Официальный сайт города Седона. Здесь Вы можете найти всю информацию о нашем городе и о наличии свободных мест в гостиницах">
@@ -12,132 +13,133 @@
 </head>
 
 <body class="page__body">
+  <div class="page-container">
 
-  <header class="page-header">
+    <header class="page-header">
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип сайта." width="185" height="96">
+      </a>
 
-    <a class="navigation__link" href="index.html">
-      <img class="navigation__image" src="img/logo.svg" alt="Логотип сайта." width="185" height="96">
-    </a>
+      <nav class="navigation">
 
-    <nav class="navigation">
+        <button class="button navigation-toggle-button" type="button">
+          <span class="visually-hidden">открыть/закрыть меню.</span>
+        </button>
 
-      <button class="button navigation-toggle-button" type="button">
-        <span class="visually-hidden">открыть/закрыть меню.</span>
-      </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="#" aria-current="page">фото и видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">форма отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+          </li>
+        </ul>
+      </nav>
 
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--current" href="#" aria-current="page">фото и видео</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">форма отзыва</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
-        </li>
-      </ul>
-    </nav>
+      <img class="page-header__image" src="1" alt="Надпись Sedona." width="320" height="320">
 
-    <img class="page-header__image" src="1" alt="Надпись Sedona." width="320" height="320">
-
-  </header>
-
-  <main class="main">
-
-    <header class="main__header">
-      <h1 class="main__title">фото и видео</h1>
-      <p class="main__text">не можете решиться на путешествие<br> из-за курса? фотографии помогут
-        вам<br> забыть о политике и экономике.</p>
     </header>
 
-    <section class="photo-content-section">
-      <h2 class="visually-hidden">Раздел с фото контентом.</h2>
+    <main class="main">
 
-      <ul class="photo-content-section__list">
-
-        <li class="photo-content-section__item">
-          <img class="photo-content-section__image" src="1" alt="Закат." width="280" height="280">
-          <h3 class="photo-content-section__title">неродные просторы</h3>
-          <p class="photo-content-section__author-name">Автор фото: Борис</p>
-          <button class="button photo-content-section__button" type="button">1350
-            <span class="visually-hidden">Количество лайков.</span>
-          </button>
-        </li>
-
-        <li class="photo-content-section__item">
-          <img class="photo-content-section__image" src="1" alt="Цветущие кактусы." width="280" height="280">
-          <h3 class="photo-content-section__title">местная растительность</h3>
-          <p class="photo-content-section__author-name">Автор фото: Сергей</p>
-          <button class="button photo-content-section__button" type="button">143
-            <span class="visually-hidden">Количество лайков.</span>
-          </button>
-        </li>
-
-        <li class="photo-content-section__item">
-          <img class="photo-content-section__image" src="1" alt="Горная дорога." width="280" height="280">
-          <h3 class="photo-content-section__title">дорога на север</h3>
-          <p class="photo-content-section__author-name">Автор фото: Петр</p>
-          <button class="button photo-content-section__button" type="button">96
-            <span class="visually-hidden">Количество лайков.</span>
-          </button>
-        </li>
-
-        <li class="photo-content-section__item">
-          <img class="photo-content-section__image" src="1" alt="Местная достопримечательность - скалы в виде моста."
-            width="280" height="280">
-          <h3 class="photo-content-section__title">мост дьявола</h3>
-          <p class="photo-content-section__author-name">Автор фото: Антон</p>
-          <button class="button photo-content-section__button" type="button">254
-            <span class="visually-hidden">Количество лайков.</span>
-          </button>
-        </li>
-
-      </ul>
-    </section>
-
-    <section class="video-content-section">
-      <h2 class="visually-hidden">Раздел с видео контентом.</h2>
-
-      <header class="video-content-section__header">
-        <p class="video-content-section__slogan">все еще сомневаетесь?</p>
-        <p class="video-content-section__text">смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br>
-          подорожали в очередной раз!</p>
+      <header class="main__header">
+        <h1 class="main__title">фото и видео</h1>
+        <p class="main__text">не можете решиться на путешествие<br> из-за курса? фотографии помогут
+          вам<br> забыть о политике и экономике.</p>
       </header>
-      <video class="video-content-section__video" src="#" width="280" poster="1"></video>
 
-    </section>
+      <section class="photo-content-section">
+        <h2 class="visually-hidden">Раздел с фото контентом.</h2>
 
-  </main>
+        <ul class="photo-content-section__list">
 
-  <footer class="footer">
-    <a class="footer__hashtag-link"
-      href="https://www.yandex.ru/search/?lr=10754&offline_search=1&text=%23visitsedona&clid=2196598&from=chromesearch">#visitsedona</a>
-    <ul class="footer__list">
-      <li class="footer__item">
-        <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Вконтакте.</span>
-        </a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__social-link footer__social-link--tlgm" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Телеграмм.</span>
-        </a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__social-link footer__social-link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS">
-          <span class="visually-hidden">Ютуб.</span>
-        </a>
-      </li>
-    </ul>
+          <li class="photo-content-section__item">
+            <img class="photo-content-section__image" src="1" alt="Закат." width="280" height="280">
+            <h3 class="photo-content-section__title">неродные просторы</h3>
+            <p class="photo-content-section__author-name">Автор фото: Борис</p>
+            <button class="button photo-content-section__button" type="button">1350
+              <span class="visually-hidden">Количество лайков.</span>
+            </button>
+          </li>
 
-    <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
-      <p class="footer__text">сделано</p>
-      <span class="visually-hidden">ссылка на Htmlacademy.ru.</span>
-    </a>
-  </footer>
+          <li class="photo-content-section__item">
+            <img class="photo-content-section__image" src="1" alt="Цветущие кактусы." width="280" height="280">
+            <h3 class="photo-content-section__title">местная растительность</h3>
+            <p class="photo-content-section__author-name">Автор фото: Сергей</p>
+            <button class="button photo-content-section__button" type="button">143
+              <span class="visually-hidden">Количество лайков.</span>
+            </button>
+          </li>
+
+          <li class="photo-content-section__item">
+            <img class="photo-content-section__image" src="1" alt="Горная дорога." width="280" height="280">
+            <h3 class="photo-content-section__title">дорога на север</h3>
+            <p class="photo-content-section__author-name">Автор фото: Петр</p>
+            <button class="button photo-content-section__button" type="button">96
+              <span class="visually-hidden">Количество лайков.</span>
+            </button>
+          </li>
+
+          <li class="photo-content-section__item">
+            <img class="photo-content-section__image" src="1" alt="Местная достопримечательность - скалы в виде моста."
+              width="280" height="280">
+            <h3 class="photo-content-section__title">мост дьявола</h3>
+            <p class="photo-content-section__author-name">Автор фото: Антон</p>
+            <button class="button photo-content-section__button" type="button">254
+              <span class="visually-hidden">Количество лайков.</span>
+            </button>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="video-content-section">
+        <h2 class="visually-hidden">Раздел с видео контентом.</h2>
+
+        <header class="video-content-section__header">
+          <p class="video-content-section__slogan">все еще сомневаетесь?</p>
+          <p class="video-content-section__text">смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br>
+            подорожали в очередной раз!</p>
+        </header>
+        <video class="video-content-section__video" src="#" width="280" poster="1"></video>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <a class="footer__hashtag-link"
+        href="https://www.yandex.ru/search/?lr=10754&offline_search=1&text=%23visitsedona&clid=2196598&from=chromesearch">#visitsedona</a>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте.</span>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__social-link footer__social-link--tlgm" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграмм.</span>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__social-link footer__social-link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">Ютуб.</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="footer__text">сделано</p>
+        <span class="visually-hidden">ссылка на Htmlacademy.ru.</span>
+      </a>
+    </footer>
+  </div>
 </body>
 
 </html>
