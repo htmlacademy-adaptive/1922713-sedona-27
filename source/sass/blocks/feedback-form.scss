@@ -48,25 +48,32 @@
   @include fontsizes(18px, 26px, 700, $black);
 }
 
-// .feedback-form__textarea {
-//   @include fontsizes(18px, 26px, 700, $black);
+.feedback-form__textarea {
+  @include fontsizes(18px, 26px, 700, $black);
+  width: 279px;
+  padding: 16px 16px 16px 16px;
+  background-color: $lightgray;
+  resize: none;
+}
+
+.feedback-form__textarea::placeholder {
+  @include fontsizes(18px, 26px, 700, $black);
+  opacity: 0.3;
+}
+
+// .feedback-form__input--emotions {
 //   width: 279px;
+//   min-height: 150px;
 //   padding: 16px 16px 16px 16px;
 //   background-color: $lightgray;
 // }
 
-.feedback-form__input--emotions {
-  width: 279px;
-  min-height: 150px;
-  padding: 16px 16px 16px 16px;
-  background-color: $lightgray;
-}
-
-.feedback-form__input--emotions::placeholder {
-  @include fontsizes(18px, 26px, 700, $black);
-  opacity: 0.3;
-  white-space: pre-wrap;
-}
+// .feedback-form__input--emotions::placeholder {
+//   @include fontsizes(18px, 26px, 700, $black);
+//   opacity: 0.3;
+//   white-space: pre-wrap;
+//   transform: translateY(-50px);
+// }
 
 .feedback-form__button {
   @include fontsizes(21px, 26px, 700, $white);
