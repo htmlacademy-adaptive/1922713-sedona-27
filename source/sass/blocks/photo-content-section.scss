@@ -1,4 +1,4 @@
-.photo-content__list {
+.photo-content-section__list {
   position: relative;
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@
   }
 }
 
-.photo-content__item {
+.photo-content-section__item {
   position: relative;
 
   &::after {
@@ -27,15 +27,15 @@
   }
 }
 
-.photo-content__title {
+.photo-content-section__title {
   @include fontsizes(14px, 21px, 700, $black);
   text-transform: uppercase;
 }
 
-.photo-content__author-name {
+.photo-content-section__author-name {
   @include fontsizes(14px, 21px, 400, $lightblack);
 }
 
-.photo-content__button {
+.photo-content-section__button {
   @include fontsizes(14px, 21px, 700, $black);
 }
