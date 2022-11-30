@@ -1,0 +1,26 @@
+.navigation__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: $blue;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.navigation__item {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.navigation__link {
+  @include fontsizes(18px, 26px, 700, $white);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 17px 0 12px 0;
+  text-decoration: none;
+}
+
+.navigation__link--current {
+  color: $brown;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <title>Седона-официальный сайт</title>
@@ -7,21 +7,22 @@
   <meta name="keywords" content="Седона, город, туризм">
   <meta name="description"
     content="Официальный сайт города Седона. Здесь Вы можете найти всю информацию о нашем городе и о наличии свободных мест в гостиницах">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
-<body class="body body-index">
+<body class="page__body">
 
-  <header class="header">
+  <header class="page-header">
+
     <nav class="navigation">
-      <button class="button navigation-button" type="button">
+      <button class="button navigation-toggle-button" type="button">
         <span class="visually-hidden">открыть/закрыть меню.</span>
       </button>
 
       <ul class="navigation__list navigation__list--left-half">
         <li class="navigation__item">
-          <a class="navigation__link" href="#" aria-current="page">главная</a>
+          <a class="navigation__link navigation__link--current" href="#" aria-current="page">главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html">фото и видео</a>
@@ -29,7 +30,7 @@
       </ul>
 
       <a class="navigation__link" href="#" aria-current="page">
-        <img class="navigation__image" src="1" alt="Логотип сайта.">
+        <img class="navigation__image" src="img/logo.svg" alt="Логотип сайта." width="185" height="96">
       </a>
 
       <ul class="navigation__list navigation__list--right-half">
@@ -41,130 +42,142 @@
         </li>
       </ul>
     </nav>
-    <img class="header__image" src="1"
-      alt="Приветственная надпись Welcome to the gorgeous Sedona! Because the Grand Canyon Sucks! на фоне гор.">
+    <img class="page-header__image" src="1"
+      alt="Приветственная надпись Welcome to the gorgeous Sedona! Because the Grand Canyon Sucks! на фоне гор."
+      width="320" height="320">
   </header>
 
   <main class="main">
-    <h1 class="main__title">седона-небольшой<br> городок в аризоне,<br> заслуживающий большего!</h1>
 
-    <section class="advantages">
-      <h2 class="advantages__slogan">рассмотрим 5 причин, по которым<br> Седона круче, чем гранд каньон!</h2>
+    <header class="main__header">
+      <h1 class="main__title">седона-небольшой<br> городок в аризоне,<br> заслуживающий большего!</h1>
+      <p class="main__text">рассмотрим 5 причин, по которым<br>Седона круче, чем гранд каньон!</p>
+    </header>
 
-      <ol class="advantages__list">
+    <section class="advantages-section">
 
-        <li class="advantages__item advantages__container">
+      <ol class="advantages-section__list">
+
+        <li class="advantages-section__item advantages-section__container advantages-section__item--has-image">
           <!--див контейнер для выравнивания текста внутри ли-айтем-->
-          <!-- <div class="advantages__container"> -->
-          <h3 class="advantages__title">настоящий городок</h3>
-          <p class="advantages__text">-№1-</p>
-          <p class="advantages__text">Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
-          <img class="advantages__image" src="1" alt="Город на фоне гор.">
+          <!-- <div class="advantages-section__container"> -->
+          <h2 class="advantages-section__title advantages-section__title--has-image">настоящий городок</h2>
+          <p class="advantages-section__text advantages-section__text--has-image">-№1-</p>
+          <p class="advantages-section__text advantages-section__text--has-image">Седона не аттракцион для туристов,<br>
+            там течет своя
+            жизнь</p>
+          <img class="advantages-section__image" src="1" width="320" height="320" alt="Город на фоне гор.">
           <!-- </div> -->
-          <ul class="advantages__advantages-city-list">
-            <li class="advantages__item advantages__item--house advantages__container">
+          <ul class="advantages-section__advantages-section-city-list">
+            <li class="advantages-section__item advantages-section__item--has-icon-house advantages-section__container">
               <!--див контейнер для выравнивания текста внутри ли-айтем-->
-              <!-- <div class="advantages__container"> -->
-              <h4 class="advantages__title">жилье</h4>
-              <p class="advantages__text">рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
+              <!-- <div class="advantages-section__container"> -->
+              <h3 class="advantages-section__title">жилье</h3>
+              <p class="advantages-section__text">рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
               <!-- </div> -->
             </li>
-            <li class="advantages__item advantages__item--food advantages__container">
+            <li class="advantages-section__item advantages-section__item--has-icon-food advantages-section__container">
               <!--див контейнер для выравнивания текста внутри ли-айтем-->
-              <!-- <div class="advantages__container"> -->
-              <h4 class="advantages__title">еда</h4>
-              <p class="advantages__text">всегда заказывайте фирменный<br> бургер, вы не разочаруетесь!</p>
+              <!-- <div class="advantages-section__container"> -->
+              <h3 class="advantages-section__title">еда</h3>
+              <p class="advantages-section__text">всегда заказывайте фирменный<br> бургер, вы не разочаруетесь!</p>
               <!-- </div> -->
             </li>
-            <li class="advantages__item advantages__item--souvenirs advantages__container">
+            <li
+              class="advantages-section__item advantages-section__item--has-icon-souvenirs advantages-section__container">
               <!--див контейнер для выравнивания текста внутри ли-айтем-->
-              <!-- <div class="advantages__container"> -->
-              <h4 class="advantages__title">сувениры</h4>
-              <p class="advantages__text">не только китайского, но и<br> местного производства!</p>
+              <!-- <div class="advantages-section__container"> -->
+              <h3 class="advantages-section__title">сувениры</h3>
+              <p class="advantages-section__text">не только китайского, но и<br> местного производства!</p>
               <!-- </div> -->
             </li>
           </ul>
         </li>
 
-        <li class="advantages__item advantages__container">
+        <li class="advantages-section__item advantages-section__container advantages-section__item--has-image">
           <!--див контейнер для выравнивания текста внутри ли-айтем-->
-          <!-- <div class="advantages__container"> -->
-          <h3 class="advantages__title">там есть мост дьявола</h3>
-          <p class="advantages__text">-№2-</p>
-          <p class="advantages__text">да, по нему можно пройти! если вы<br> осмелитесь, конечно</p>
+          <!-- <div class="advantages-section__container"> -->
+          <h2 class="advantages-section__title advantages-section__title--has-image">там есть мост дьявола</h2>
+          <p class="advantages-section__text advantages-section__text--has-image">-№2-</p>
+          <p class="advantages-section__text advantages-section__text--has-image">да, по нему можно пройти! если вы<br>
+            осмелитесь,
+            конечно
+          </p>
           <!-- </div> -->
-          <img class="advantages__image" src="1" alt="Мост дьявола.">
+          <img class="advantages-section__image" src="1" alt="Мост дьявола." width="320" height="320">
         </li>
 
-        <li class="advantages__item advantages__container">
+        <li class="advantages-section__item advantages-section__container advantages-section__item--has-line">
           <!--див контейнер для выравнивания текста внутри ли-айтем-->
-          <!-- <div class="advantages__container"> -->
-          <h3 class="advantages__title">небольшая площадь</h3>
-          <p class="advantages__text">-№3-</p>
-          <p class="advantages__text">все интересные места находятся<br> очень близко</p>
-          <!-- </div> -->
-        </li>
-
-        <li class="advantages__item advantages__container">
-          <!--див контейнер для выравнивания текста внутри ли-айтем-->
-          <!-- <div class="advantages__container"> -->
-          <h3 class="advantages__title">красивая дорога</h3>
-          <p class="advantages__text">-№4-</p>
-          <p class="advantages__text">ехать в седону из лас-вегаса<br> совсем не скучно</p>
+          <!-- <div class="advantages-section__container"> -->
+          <h2 class="advantages-section__title">небольшая площадь</h2>
+          <p class="advantages-section__text">-№3-</p>
+          <p class="advantages-section__text">все интересные места находятся<br> очень близко</p>
           <!-- </div> -->
         </li>
 
-        <li class="advantages__item advantages__container">
+        <li class="advantages-section__item advantages-section__container advantages-section__item--has-line">
           <!--див контейнер для выравнивания текста внутри ли-айтем-->
-          <!-- <div class="advantages__container"> -->
-          <h3 class="advantages__title">мало туристов</h3>
-          <p class="advantages__text">-№5-</p>
-          <p class="advantages__text">большинство едет в гранд каньон<br> и толпится там</p>
+          <!-- <div class="advantages-section__container"> -->
+          <h2 class="advantages-section__title">красивая дорога</h2>
+          <p class="advantages-section__text">-№4-</p>
+          <p class="advantages-section__text">ехать в седону из лас-вегаса<br> совсем не скучно</p>
+          <!-- </div> -->
+        </li>
+
+        <li class="advantages-section__item advantages-section__container advantages-section__item--has-line">
+          <!--див контейнер для выравнивания текста внутри ли-айтем-->
+          <!-- <div class="advantages-section__container"> -->
+          <h2 class="advantages-section__title">мало туристов</h2>
+          <p class="advantages-section__text">-№5-</p>
+          <p class="advantages-section__text">большинство едет в гранд каньон<br> и толпится там</p>
           <!-- </div> -->
         </li>
 
       </ol>
     </section>
 
-    <section class="subsribe-section">
-      <h2 class="subsribe-section__title">заинтересовались</h2>
-      <p class="subsribe-section__text">укажите предполагаемые даты<br> поездки, и мы покажем вам лучшие<br> предложения
+    <section class="search-hotel-section">
+      <h2 class="search-hotel-section__title">заинтересовались?</h2>
+      <p class="search-hotel-section__text">укажите предполагаемые даты<br> поездки, и мы покажем вам лучшие<br>
+        предложения
         гостиниц в седоне</p>
-      <a class="subsribe-section__link" href="form.html">найти гостиницу</a>
+      <a class="search-hotel-section__link" href="#">найти гостиницу</a>
     </section>
 
-    <section class="map">
+    <section class="map-section">
       <h2 class="visually-hidden">интерактивная карта.</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1180909.4306491544!2d-112.29008533380927!3d35.16080312360696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669103336314!5m2!1sru!2sru"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
   </main>
 
   <footer class="footer">
-    <a class="footer__link"
+    <a class="footer__hashtag-link"
       href="https://www.yandex.ru/search/?lr=10754&offline_search=1&text=%23visitsedona&clid=2196598&from=chromesearch">#visitsedona</a>
     <ul class="footer__list">
       <li class="footer__item">
-        <a class="footer__link footer__link--vk" href="https://vk.com/htmlacademy">
+        <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Вконтакте.</span>
         </a>
       </li>
       <li class="footer__item">
-        <a class="footer__link footer__link--tlgm" href="https://t.me/htmlacademy">
+        <a class="footer__social-link footer__social-link--tlgm" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Телеграмм.</span>
         </a>
       </li>
       <li class="footer__item">
-        <a class="footer__link footer__link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS">
+        <a class="footer__social-link footer__social-link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS">
           <span class="visually-hidden">Ютуб.</span>
         </a>
       </li>
     </ul>
-    <p class="footer__text">сделано</p>
-    <a class="footer__link footer__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
+
+    <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <p class="footer__text">сделано</p>
       <span class="visually-hidden">ссылка на Htmlacademy.ru.</span>
     </a>
   </footer>
