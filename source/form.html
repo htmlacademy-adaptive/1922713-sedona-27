@@ -60,25 +60,27 @@
         <!-- <h2 class="visually-hidden">Форма обратной связи</h2> -->
         <fieldset class="feedback-form__group">
           <legend class="feedback-form__title">представьтесь</legend>
-          <label class="feedback-form__label feedback-form__label--has-text" for="name">имя*</label>
-          <input class="feedback-form__input feedback-form__input--has-text" type="text" id="name" name="name"
-            placeholder="Пётр">
-          <label class="feedback-form__label feedback-form__label--has-text" for="surname">фамилия*</label>
-          <input class="feedback-form__input feedback-form__input--has-text" type="text" id="surname" name="surname"
-            placeholder="Пустота">
-          <label class="feedback-form__label feedback-form__label--has-text" for="patronymic">отчество</label>
-          <input class="feedback-form__input feedback-form__input--has-text" type="text" id="patronymic"
-            name="patronymic" placeholder="Викторович">
+          <label class="feedback-form__label feedback-form__label--person-information" for="name">имя*</label>
+          <input class="feedback-form__input feedback-form__input--person-information" type="text" id="name" name="name"
+            value="Пётр">
+          <label class="feedback-form__label feedback-form__label--person-information" for="surname">фамилия*</label>
+          <input class="feedback-form__input feedback-form__input--person-information" type="text" id="surname"
+            name="surname" value="Пустота">
+          <label class="feedback-form__label feedback-form__label--person-information" for="patronymic">отчество</label>
+          <input class="feedback-form__input feedback-form__input--person-information" type="text" id="patronymic"
+            name="patronymic" value="Викторович">
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Укажите телефон и электронную почту</h2> -->
         <fieldset class="feedback-form__group">
           <legend class="feedback-form__title">контактная информация:*</legend>
-          <label class="feedback-form__label feedback-form__label--has-text" for="telephone">Контактный телефон*</label>
-          <input class="feedback-form__input feedback-form__input--has-text feedback-form__input--contact-information"
-            type="text" id="telephone" name="telephone" placeholder="Введите телефон">
-          <label class="feedback-form__label feedback-form__label--has-text" for="email">Электронная почта*:</label>
-          <input class="feedback-form__input feedback-form__input--has-text feedback-form__input--contact-information"
+          <label class="feedback-form__label feedback-form__label--person-information" for="telephone">Контактный
+            телефон*</label>
+          <input class="feedback-form__input feedback-form__input--person-information feedback-form__input--contacts"
+            type="number" id="telephone" name="telephone" placeholder="Введите телефон">
+          <label class="feedback-form__label feedback-form__label--person-information" for="email">Электронная
+            почта*:</label>
+          <input class="feedback-form__input feedback-form__input--person-information feedback-form__input--contacts"
             type="email" id="email" name="email" placeholder="Введите e-mail">
         </fieldset>
 

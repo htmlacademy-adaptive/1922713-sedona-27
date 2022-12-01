@@ -18,7 +18,7 @@
   margin-bottom: 16px;
 }
 
-.feedback-form__label--has-text {
+.feedback-form__label--person-information {
   text-transform: uppercase;
 }
 
@@ -26,17 +26,17 @@
   @include fontsizes(18px, 26px, 700, $black);
 }
 
-.feedback-form__input--has-text {
+.feedback-form__input--person-information {
   width: 280px;
   padding: 16px 16px 16px 16px;
   background-color: $lightgray;
 }
 
-.feedback-form__input--has-text::placeholder {
+.feedback-form__input--person-information::placeholder {
   @include fontsizes(18px, 26px, 700, $black);
 }
 
-.feedback-form__input--contact-information::placeholder {
+.feedback-form__input--contacts::placeholder {
   opacity: 0.3;
 }
 
