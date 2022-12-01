@@ -13,7 +13,7 @@
 </head>
 
 <body class="page__body">
-  <div class="page-container">
+  <div class="page-container page-container--form">
     <header class="page-header">
 
       <a class="page-header__logo-link" href="index.html">
@@ -58,8 +58,8 @@
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
         <!-- <h2 class="visually-hidden">Форма обратной связи</h2> -->
-        <fieldset class="feedback-form__group">
-          <legend class="feedback-form__title">представьтесь</legend>
+        <fieldset class="feedback-form__group feedback-form__group--person-information">
+          <legend class="feedback-form__title">представьтесь:</legend>
           <label class="feedback-form__label feedback-form__label--person-information" for="name">имя*</label>
           <input class="feedback-form__input feedback-form__input--person-information" type="text" id="name" name="name"
             value="Пётр">
@@ -72,8 +72,8 @@
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Укажите телефон и электронную почту</h2> -->
-        <fieldset class="feedback-form__group">
-          <legend class="feedback-form__title">контактная информация:*</legend>
+        <fieldset class="feedback-form__group feedback-form__group--person-information">
+          <legend class="feedback-form__title">контактная информация:</legend>
           <label class="feedback-form__label feedback-form__label--person-information" for="telephone">Контактный
             телефон*</label>
           <input class="feedback-form__input feedback-form__input--person-information feedback-form__input--contacts"
@@ -85,7 +85,7 @@
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Укажите Ваш общее впечатление</h2> -->
-        <fieldset class="feedback-form__group">
+        <fieldset class="feedback-form__group feedback-form__group--size-xxl">
           <legend class="feedback-form__title">ваше общее впечатление:</legend>
           <label class="feedback-form__label feedback-form__label--impression" for="good">Скорее
             положительное</label>
@@ -99,7 +99,7 @@
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Укажите посещенные достопримечательности:</h2> -->
-        <fieldset class="feedback-form__group">
+        <fieldset class="feedback-form__group feedback-form__group--size-xxl">
           <legend class="feedback-form__title">посещенные достопримечательности:</legend>
           <label class="feedback-form__label feedback-form__label--attractions" for="devils-bridge">Мост Дьявола</label>
           <input class="feedback-form__input" type="checkbox" id="devils-bridge" name="attractions"
@@ -116,7 +116,7 @@
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Расскажите нам о своих эмоциях:</h2> -->
-        <fieldset class="feedback-form__group">
+        <fieldset class="feedback-form__group feedback-form__group--size-xxl">
           <legend class="feedback-form__title">опишите свои эмоции:</legend>
 
           <label class="visually-hidden" for="emotions">Поле для написания отзыва</label>
