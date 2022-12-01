@@ -15,17 +15,20 @@
 }
 
 .advantages-section__item--has-line {
-  position: relative;
   background-color: $gray;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 284px;
-    height: 1px;
-    background-color: $darkgray;
-    top: 0;
-    left: 10px;
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 284px;
+      height: 1px;
+      background-color: $darkgray;
+      top: 0;
+      left: 10px;
+    }
   }
 }
 

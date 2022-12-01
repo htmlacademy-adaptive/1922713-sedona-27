@@ -8,6 +8,7 @@
 
 .main__text {
   @include fontsizes(14px, 21px, 400, $lightblack);
+  margin: 0;
   text-transform: uppercase;
   text-align: center;
 }
