@@ -28,8 +28,47 @@
 }
 
 .feedback-form__group--size-xxl {
+  position: relative;
   grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 123px;
+      top: -15px;
+      left: 0;
+      height: 1px;
+      background-color: $darkgray;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      top: -15px;
+      right: 0;
+      height: 1px;
+      background-color: $darkgray;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      width: 280px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    grid-template-columns: 480px 480px;
+  }
 }
+
 
 .feedback-form__title {
   @include fontsizes(18px, 26px, 700, $black);
@@ -63,6 +102,12 @@
 
 .feedback-form__input--person-information::placeholder {
   @include fontsizes(18px, 26px, 700, $black);
+}
+
+.feedback-form__input--contacts {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .feedback-form__input--contacts::placeholder {
