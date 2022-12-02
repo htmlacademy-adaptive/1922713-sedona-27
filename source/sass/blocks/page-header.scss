@@ -68,5 +68,7 @@
 }
 
 .navigation__link--current {
-  color: $brown;
+  @media (min-width: $tablet-width) {
+    color: $brown;
+  }
 }
