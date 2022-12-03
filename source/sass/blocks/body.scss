@@ -1,6 +1,31 @@
 .page__body {
+  // width: 320px;
+  // margin: 0 auto;
+  // padding: 0;
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.page-container {
   width: 320px;
   margin: 0 auto;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
+
+// .page-container--form {
+//   @media (min-width: $tablet-width) {
+//     padding: 0 60px 0 60px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     padding: 0 120px 0 120px;
+//   }
+// }

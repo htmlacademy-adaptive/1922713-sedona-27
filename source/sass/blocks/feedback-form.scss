@@ -1,16 +1,84 @@
-.feedback-form__group {
-  border: none;
+.feedback-form {
+  margin: 0 auto;
 
-  &:last-of-type {
-    margin-bottom: 56px;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    width: 648px;
+    grid-template-columns: 324px 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    grid-template-columns: 480px 480px;
   }
 }
+
+.feedback-form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.feedback-form__group--person-information {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.feedback-form__group--size-xxl {
+  position: relative;
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 123px;
+      top: -15px;
+      left: 0;
+      height: 1px;
+      background-color: $darkgray;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      top: -15px;
+      right: 0;
+      height: 1px;
+      background-color: $darkgray;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      width: 280px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    grid-template-columns: 480px 480px;
+  }
+}
+
 
 .feedback-form__title {
   @include fontsizes(18px, 26px, 700, $black);
   margin: 0;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .feedback-form__label {
@@ -18,7 +86,7 @@
   margin-bottom: 16px;
 }
 
-.feedback-form__label--has-text {
+.feedback-form__label--person-information {
   text-transform: uppercase;
 }
 
@@ -26,17 +94,23 @@
   @include fontsizes(18px, 26px, 700, $black);
 }
 
-.feedback-form__input--has-text {
+.feedback-form__input--person-information {
   width: 280px;
   padding: 16px 16px 16px 16px;
   background-color: $lightgray;
 }
 
-.feedback-form__input--has-text::placeholder {
+.feedback-form__input--person-information::placeholder {
   @include fontsizes(18px, 26px, 700, $black);
 }
 
-.feedback-form__input--contact-information::placeholder {
+.feedback-form__input--contacts {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+
+.feedback-form__input--contacts::placeholder {
   opacity: 0.3;
 }
 
@@ -50,10 +124,21 @@
 
 .feedback-form__textarea {
   @include fontsizes(18px, 26px, 700, $black);
+  display: block;
   width: 279px;
+  margin: 0 auto;
   padding: 16px 16px 16px 16px;
   background-color: $lightgray;
   resize: none;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+  }
 }
 
 .feedback-form__textarea::placeholder {

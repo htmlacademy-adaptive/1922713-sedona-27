@@ -4,10 +4,19 @@
   margin-bottom: 35px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .main__text {
   @include fontsizes(14px, 21px, 400, $lightblack);
+  margin: 0;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    line-height: 26px;
+  }
 }
