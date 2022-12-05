@@ -156,26 +156,33 @@
       </ul>
 
       <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="footer__text">сделано</p>
+        <p class="footer__text">разработано</p>
         <span class="visually-hidden">ссылка на Htmlacademy.ru.</span>
       </a>
     </footer>
 
-    <div class="modal-window modal-window--failure">
-      <h2 class="modal-window__title">что-то пошло не так!</h2>
-      <p class="modal-window__text">проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить</p>
-      <button class="button modal-window__button" type="button">ок</button>
-    </div>
-
-    <div class="modal-window modal-window--valid-success">
-      <h2 class="modal-window__title">ваш отзыв отправлен!</h2>
-      <p class="modal-window__text">спасибо за ваше участие, ваш<br> отзыв уже поступил к нам.<br> в ближайшее время
-        мы<br> опубликуем его на сайте.</p>
-      <div class="modal-window__button-container">
-        <button class="button modal-window__button" type="button">закрыть окно</button>
+    <div class="modal-window-container">
+      <div class="modal-window modal-window--failure">
+        <h2 class="modal-window__title">что-то пошло не так!</h2>
+        <p class="modal-window__text">проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить
+        </p>
+        <button class="button modal-window__button modal-window__button--failure" type="button">ок</button>
       </div>
     </div>
+
+    <div class="modal-window-container">
+      <div class="modal-window modal-window--valid-success">
+        <h2 class="modal-window__title">ваш отзыв отправлен!</h2>
+        <p class="modal-window__text">спасибо за ваше участие, ваш<br> отзыв уже поступил к нам.<br> в ближайшее время
+          мы<br> опубликуем его на сайте.</p>
+        <div class="modal-window__button-container">
+          <button class="button modal-window__button modal-window__button-success" type="button">закрыть окно</button>
+        </div>
+      </div>
+    </div>
+
   </div>
+  <script scr="js/script.js"></script>
 </body>
 
 </html>
