@@ -11,6 +11,9 @@
 .page-header__logo-link {
   display: flex;
   justify-content: center;
+  margin-bottom: -35px;
+  //это индекс для логотипа-ссылки. он "выше", чем навигация на планшете и десктопе, но ниже открытого меню на мобиле
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -19,14 +22,102 @@
   }
 }
 
+.navigation {
+  position: relative;
+}
+
 .navigation-toggle-button {
+  position: absolute;
+  // width: 23px;
+  // height: 23px;
+  // top: 10px;
+  // right: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--closed .navigation-toggle-button {
+  content: "";
+  // position: absolute;
+  width: 23px;
+  height: 4px;
+  top: -50px;
+  right: 10px;
+  background-color: $blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 10px;
+    right: 0;
+    background-color: $blue;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 20px;
+    right: 0;
+    background-color: $blue;
+  }
+}
+
+.navigation--opened .navigation-toggle-button {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 20px;
+    right: 10px;
+    background-color: $black;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 20px;
+    right: 10px;
+    background-color: $black;
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--closed .navigation__list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.navigation--opened .navigation__list {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: -15px;
+  }
+}
+
+.navigation--nojs .navigation-toggle-button {
   display: none;
 }
 
 .navigation__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  // display: none;
+
   margin: 0;
   padding: 0;
   background-color: $blue;
@@ -34,6 +125,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 768px;
     background-color: $white;
@@ -51,19 +145,30 @@
   }
 }
 
+.navigation__item:nth-of-type(2) {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
+}
+
 .navigation__link {
   @include fontsizes(18px, 26px, 700, $white);
   display: flex;
   justify-content: center;
-  width: 100%;
+
   padding: 17px 0 12px 0;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    width: 153px;
     padding: 18px 0 17px 0;
     font-size: 14px;
     line-height: 21px;
     color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
   }
 }
 
