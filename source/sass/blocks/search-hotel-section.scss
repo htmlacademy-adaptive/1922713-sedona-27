@@ -21,8 +21,14 @@
   @include fontsizes(21px, 26px, 700, $white);
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   padding: 16px 49px 16px 49px;
   text-decoration: none;
   background-color: $blue;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    padding: 15px 0 17px 0;
+  }
 }
