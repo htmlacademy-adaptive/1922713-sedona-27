@@ -7,6 +7,11 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 36px 76px 36px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 137px 76px 36px 104px;
   }
 }
 
@@ -29,8 +34,6 @@
 }
 
 .footer__item {
-  background-color: $blue;
-
   &:not(:last-child) {
     margin-right: 6px;
   }
@@ -40,6 +43,7 @@
   display: block;
   width: 48px;
   height: 48px;
+  background-color: $blue;
 }
 
 .footer__htmlacademy-link {
@@ -48,4 +52,8 @@
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+}
+
+.footer__text {
+  margin: 0;
 }
