@@ -7,15 +7,21 @@
 }
 
 .modal-window--failure {
-  width: 400px;
   margin: 0 auto;
-  padding: 50px 46px 50px 46px;
+  padding: 50px 0 50px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
 }
 
 .modal-window--valid-success {
-  width: 640px;
   margin: 0 auto;
-  padding: 53px 98px 44px 98px;
+  padding: 53px 0 44px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+  }
 }
 
 .modal-window__title {
@@ -27,9 +33,28 @@
 
 .modal-window__text {
   @include fontsizes(14px, 21px, 400, $lightblack);
+  margin: 0;
   margin-bottom: 28px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px 0 45px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.modal-window__text--valid-success {
+  @media (min-width: $tablet-width) {
+    padding: 0 110px 0 110px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .modal-window__button {
@@ -61,6 +86,6 @@
 
 .modal-window__button-container {
   width: 100%;
-  padding: 20px 20px 20px 20px;
+  padding: 44px 0 44px 0;
   background-color: $lightgray;
 }

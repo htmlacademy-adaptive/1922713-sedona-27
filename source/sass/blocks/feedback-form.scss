@@ -27,6 +27,20 @@
   }
 }
 
+.feedback-form__group--impression {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.feedback-form__group--attractions {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .feedback-form__group--size-xxl {
   position: relative;
   grid-column: 1/-1;
@@ -160,14 +174,39 @@
 //   transform: translateY(-50px);
 // }
 
+.feedback-form-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 648px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 768px;
+    justify-content: space-between;
+    margin-left: 95px;
+  }
+}
+
 .feedback-form__button {
   @include fontsizes(21px, 26px, 700, $white);
   // width: 280px;
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 16px 49px 16px 49px;
   text-transform: uppercase;
   background-color: $blue;
   // white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding: 16px 71px 16px 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
+    padding: 16px 101px 16px 101px;
+  }
 }
 
 .feedback-form__text {

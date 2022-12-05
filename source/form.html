@@ -49,10 +49,9 @@
 
     <main class="main">
 
-      <header class="main__header">
+      <header class="main__header main__header--form">
         <h1 class="main__title">оставьте свой отзыв</h1>
         <p class="main__text">помогите нашим отелям стать лучше!<br> оставьте отзыв о<br> них, а также о
-
           посещенных вами<br> достопримечательностях</p>
       </header>
 
@@ -85,7 +84,7 @@
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Укажите Ваш общее впечатление</h2> -->
-        <fieldset class="feedback-form__group feedback-form__group--size-xxl">
+        <fieldset class="feedback-form__group feedback-form__group--size-xxl feedback-form__group--impression">
           <legend class="feedback-form__title">ваше общее впечатление:</legend>
           <label class="feedback-form__label feedback-form__label--impression" for="good">Скорее
             положительное</label>
@@ -99,7 +98,7 @@
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Укажите посещенные достопримечательности:</h2> -->
-        <fieldset class="feedback-form__group feedback-form__group--size-xxl">
+        <fieldset class="feedback-form__group feedback-form__group--size-xxl feedback-form__group--attractions">
           <legend class="feedback-form__title">посещенные достопримечательности:</legend>
           <label class="feedback-form__label feedback-form__label--attractions" for="devils-bridge">Мост Дьявола</label>
           <input class="feedback-form__input" type="checkbox" id="devils-bridge" name="attractions"
@@ -127,8 +126,10 @@
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
-        <button class="button feedback-form__button" type="submit">отправить отзыв</button>
-        <p class="feedback-form__text">* — обязательные поля</p>
+        <div class="feedback-form-container">
+          <button class="button feedback-form__button" type="submit">отправить отзыв</button>
+          <p class="feedback-form__text">* — обязательные поля</p>
+        </div>
 
       </form>
 
@@ -164,7 +165,8 @@
     <div class="modal-window-container">
       <div class="modal-window modal-window--failure">
         <h2 class="modal-window__title">что-то пошло не так!</h2>
-        <p class="modal-window__text">проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить
+        <p class="modal-window__text">проверьте поля, выделенные<br> красным, скорее всего
+          вы<br> забыли их заполнить
         </p>
         <button class="button modal-window__button modal-window__button--failure" type="button">ок</button>
       </div>
@@ -173,8 +175,8 @@
     <div class="modal-window-container">
       <div class="modal-window modal-window--valid-success">
         <h2 class="modal-window__title">ваш отзыв отправлен!</h2>
-        <p class="modal-window__text">спасибо за ваше участие, ваш<br> отзыв уже поступил к нам.<br> в ближайшее время
-          мы<br> опубликуем его на сайте.</p>
+        <p class="modal-window__text modal-window__text--valid-success">спасибо за ваше участие, ваш<br> отзыв уже
+          поступил к нам.<br> в ближайшее время мы<br> опубликуем его на сайте.</p>
         <div class="modal-window__button-container">
           <button class="button modal-window__button modal-window__button-success" type="button">закрыть окно</button>
         </div>
@@ -182,7 +184,7 @@
     </div>
 
   </div>
-  <script scr="js/script.js"></script>
+  <script srс="js/script.js"></script>
 </body>
 
 </html>

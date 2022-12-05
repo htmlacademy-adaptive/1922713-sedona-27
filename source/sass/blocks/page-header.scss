@@ -9,8 +9,8 @@
 }
 
 .page-header__logo-link {
-  display: flex;
-  justify-content: center;
+  width: 185px;
+  margin: 0 auto;
   margin-bottom: -35px;
   //это индекс для логотипа-ссылки. он "выше", чем навигация на планшете и десктопе, но ниже открытого меню на мобиле
   z-index: 1;
@@ -28,11 +28,11 @@
 
 .navigation-toggle-button {
   position: absolute;
-  // width: 23px;
-  // height: 23px;
+  width: 40px;
+  height: 40px;
+
   // top: 10px;
   // right: 10px;
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -41,11 +41,40 @@
 .navigation--closed .navigation-toggle-button {
   content: "";
   // position: absolute;
-  width: 23px;
-  height: 4px;
-  top: -50px;
-  right: 10px;
+  // width: 23px;
+  // height: 4px;
+  top: -30px;
+  right: 0;
   background-color: $blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 5px;
+    right: 0;
+    background-color: $white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 14px;
+    right: 0;
+    background-color: $white;
+  }
+}
+
+.navigation--opened .navigation-toggle-button {
+  content: "";
+  // position: absolute;
+  // width: 23px;
+  // height: 4px;
+  top: 4px;
+  right: 10px;
 
   &::before {
     content: "";
@@ -54,30 +83,9 @@
     height: 4px;
     top: 10px;
     right: 0;
-    background-color: $blue;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 4px;
-    top: 20px;
-    right: 0;
-    background-color: $blue;
-  }
-}
-
-.navigation--opened .navigation-toggle-button {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 4px;
-    top: 20px;
-    right: 10px;
-    background-color: $black;
+    background-color: $white;
     transform: rotate(45deg);
+    z-index: 3;
   }
 
   &::after {
@@ -85,10 +93,11 @@
     position: absolute;
     width: 23px;
     height: 4px;
-    top: 20px;
-    right: 10px;
-    background-color: $black;
+    top: 10px;
+    right: 0;
+    background-color: $white;
     transform: rotate(-45deg);
+    z-index: 3;
   }
 
   @media (min-width: $tablet-width) {
