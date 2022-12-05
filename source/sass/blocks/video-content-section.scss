@@ -1,5 +1,5 @@
 .video-content-section {
-  padding-top: 17px;
+  padding: 17px 0 0 0;
 }
 
 .video-content-section__slogan {
@@ -13,4 +13,21 @@
   @include fontsizes(14px, 21px, 400, $lightblack);
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 160px 0 160px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 370px 0 370px;
+
+    br {
+      display: none;
+    }
+  }
+
 }
