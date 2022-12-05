@@ -1,10 +1,13 @@
 .advantages-section__list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages-section__item {
@@ -98,6 +101,13 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
+  }
+}
+
+.advantages-section__image--change-order {
+  @media (min-width: $tablet-width) {
+    //других order на странице нет
+    order: -1;
   }
 }
 
