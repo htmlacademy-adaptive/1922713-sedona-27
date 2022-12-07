@@ -62,6 +62,19 @@
   margin: 0 auto;
   text-transform: uppercase;
   background-color: $blue;
+
+  &:hover {
+    background-color: $darkblue;
+  }
+
+  &:focus {
+    background-color: $darkblue;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $darkestblue;
+  }
 }
 
 .modal-window__button--failure {

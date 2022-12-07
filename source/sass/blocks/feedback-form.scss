@@ -198,6 +198,19 @@
   background-color: $blue;
   // white-space: nowrap;
 
+  &:hover {
+    background-color: $darkblue;
+  }
+
+  &:focus {
+    background-color: $darkblue;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $darkestblue;
+  }
+
   @media (min-width: $tablet-width) {
     width: 324px;
     padding: 16px 71px 16px 71px;
