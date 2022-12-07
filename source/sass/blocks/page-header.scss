@@ -68,6 +68,18 @@
   }
 }
 
+.navigation--closed .navigation-toggle-button:hover {
+  background-color: rgba($blue, 0.6);
+
+  &:focus {
+    background-color: rgba($blue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($blue, 0.3);
+  }
+}
+
 .navigation--opened .navigation-toggle-button {
   content: "";
   // position: absolute;
@@ -102,6 +114,36 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.navigation--opened .navigation-toggle-button:hover {
+  &::before {
+    background-color: rgba($white, 0.6);
+  }
+
+  &::after {
+    background-color: rgba($white, 0.6);
+  }
+}
+
+.navigation--opened .navigation-toggle-button:focus {
+  &::before {
+    background-color: rgba($white, 0.6);
+  }
+
+  &::after {
+    background-color: rgba($white, 0.6);
+  }
+}
+
+.navigation--opened .navigation-toggle-button:active {
+  &::before {
+    background-color: rgba($white, 0.3);
+  }
+
+  &::after {
+    background-color: rgba($white, 0.3);
   }
 }
 
@@ -164,9 +206,23 @@
   @include fontsizes(18px, 26px, 700, $white);
   display: flex;
   justify-content: center;
-
   padding: 17px 0 12px 0;
   text-decoration: none;
+
+  @media (max-width: $mobile-width-only) {
+    &:hover {
+      background-color: $darkblue;
+    }
+
+    &:focus {
+      background-color: $darkblue;
+    }
+
+    &:active {
+      color: rgba($black, 0.3);
+      background-color: $darkestblue;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 153px;
@@ -174,10 +230,22 @@
     font-size: 14px;
     line-height: 21px;
     color: $black;
-  }
 
-  @media (min-width: $desktop-width) {
-    width: 240px;
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:focus {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: rgba($black, 0.3);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 240px;
+    }
   }
 }
 

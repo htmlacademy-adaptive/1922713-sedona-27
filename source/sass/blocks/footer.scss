@@ -44,6 +44,18 @@
   width: 48px;
   height: 48px;
   background-color: $blue;
+
+  &:hover {
+    background-color: $darkblue;
+  }
+
+  &:focus {
+    background-color: $darkblue;
+  }
+
+  &:active {
+    background-color: $darkestblue;
+  }
 }
 
 .footer__htmlacademy-link {
