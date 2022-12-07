@@ -106,6 +106,18 @@
 
 .feedback-form__input {
   @include fontsizes(18px, 26px, 700, $black);
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: $white;
+  }
 }
 
 .feedback-form__input--person-information {
@@ -144,7 +156,20 @@
   padding: 16px 16px 16px 16px;
   background-color: $lightgray;
   resize: none;
+  border: none;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: $white;
+  }
 
   @media (min-width: $tablet-width) {
     width: 648px;

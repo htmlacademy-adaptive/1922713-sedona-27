@@ -21,6 +21,18 @@
   // margin-bottom: 34px;
   justify-content: center;
   text-transform: uppercase;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:focus {
+    color: $blue;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .footer__list {
@@ -64,6 +76,18 @@
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:focus {
+    color: $blue;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .footer__text {

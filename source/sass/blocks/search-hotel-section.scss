@@ -58,4 +58,8 @@
     color: rgba($white, 0.3);
     background-color: $darkestblue;
   }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
