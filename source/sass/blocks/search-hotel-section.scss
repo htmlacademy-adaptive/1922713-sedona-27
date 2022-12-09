@@ -1,5 +1,5 @@
 .search-hotel-section {
-  padding: 38px 0 49px 0;
+  padding: 41px 0 49px 0;
 
   @media (min-width: $tablet-width) {
     padding: 61px 155px 58px 155px;
@@ -13,7 +13,7 @@
 .search-hotel-section__title {
   @include fontsizes(21px, 26px, 700, $black);
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -35,11 +35,13 @@
   @include fontsizes(21px, 26px, 700, $white);
   display: flex;
   justify-content: center;
+  width: 284px;
   margin: 0 auto;
-  padding: 16px 49px 16px 49px;
+  padding: 17px 5px 15px 5px;
   text-decoration: none;
   background-color: $blue;
   text-transform: uppercase;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 458px;

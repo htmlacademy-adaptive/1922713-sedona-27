@@ -1,5 +1,5 @@
 .footer {
-  padding: 39px 0 23px 0;
+  padding: 34px 0 23px 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -18,8 +18,9 @@
 .footer__hashtag-link {
   @include fontsizes(21px, 26px, 700, $black);
   display: flex;
-  // margin-bottom: 34px;
   justify-content: center;
+  margin-bottom: 28px;
+  padding: 5px;
   text-transform: uppercase;
 
   &:hover {
@@ -40,7 +41,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0;
-  // margin-bottom: 40px;
+  margin-bottom: 48px;
   padding: 0;
   list-style-type: none;
 }
@@ -72,9 +73,9 @@
 
 .footer__htmlacademy-link {
   @include fontsizes(14px, 21px, 400, $black);
-  text-decoration: none;
   display: flex;
   justify-content: center;
+  text-decoration: none;
   text-transform: uppercase;
 
   &:hover {
@@ -88,6 +89,24 @@
   &:active {
     color: #b3b3b3;
   }
+}
+
+.footer__social-link--vk {
+  background-image: url("../../img/footer/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__social-link--tlgm {
+  background-image: url("../../img/footer/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__social-link--yt {
+  background-image: url("../../img/footer/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer__text {
