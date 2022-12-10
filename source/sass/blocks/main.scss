@@ -4,12 +4,12 @@
   @media (min-width: $tablet-width) {
     width: 564px;
     margin: 0 auto;
-    // padding: 0 124px 56px 124px;
+    padding: 49px 0 54px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 605px;
-    // padding: 0 358px 44px 358px;
+    // padding: 49px 0 54px 0;
   }
 }
 
@@ -38,12 +38,13 @@
 .main__title {
   @include fontsizes(18px, 26px, 700, $black);
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
+    font-size: 21px;
+    margin-bottom: 25px;
 
     br {
       display: none;
