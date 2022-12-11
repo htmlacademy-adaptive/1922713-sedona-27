@@ -16,6 +16,7 @@
 }
 
 .advantages-section__item {
+  box-sizing: border-box;
   // padding: 37px 0 37px 0;
 
   @media (min-width: $tablet-width) {
@@ -57,9 +58,15 @@
   @media (max-width: $mobile-width-only) {
     padding: 33px 10px 0 65px;
   }
+}
+
+.advantages-section__item--has-icon-house {
+  background-image: url("../../img/index/house.svg");
+  background-position: top 24px left 18px;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    padding: 154px 0 30px 0;
+    padding: 152px 0 60px 0;
 
     br {
       display: none;
@@ -67,27 +74,37 @@
   }
 }
 
-.advantages-section__item--has-icon-house {
-  background-image: url("../../img/index/house.svg");
-  background-position: top 24px left 18px;
-  background-repeat: no-repeat;
-}
-
 .advantages-section__item--has-icon-food {
   background-image: url("../../img/index/food.svg");
   background-position: top 24px left 18px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding: 150px 0 59px 0;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .advantages-section__item--has-icon-souvenirs {
-  padding-bottom: 45px;
+  padding-bottom: 44px;
   background-image: url("../../img/index/souvenir.svg");
   background-position: top 24px left 18px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding: 147px 0 59px 0;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .advantages-section__item--has-line {
-  padding: 25px 10px 25px 10px;
+  padding: 23px 10px 25px 10px;
   background-color: $gray;
 
   @media (max-width: $mobile-width-only) {
@@ -102,6 +119,16 @@
       top: -2px;
       left: 10px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 51px 0 52px 0;
+  }
+}
+
+.advantages-section__item--has-line-road {
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 25px 0;
   }
 }
 
@@ -142,6 +169,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 53px;
+  }
 }
 
 .advantages-section__title--has-image:nth-of-type(2) {
@@ -159,6 +190,10 @@
   }
 }
 
+.advantages-section__title--has-line {
+  padding: 0 49px;
+}
+
 .advantages-section__text {
   @include fontsizes(14px, 21px, 400, $lightblack);
   margin: 0;
@@ -173,21 +208,49 @@
   }
 }
 
-.advantages-section__text-has-icon {
-  @media (max-width: $mobile-width-only) {
-    text-align: left;
-  }
-}
-
 .advantages-section__text:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages-section__text--has-image {
   color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 17px;
+    padding: 0 30px;
+  }
+}
+
+.advantages-section__text--has-icon {
+  @media (max-width: $mobile-width-only) {
+    text-align: left;
+  }
+}
+
+.advantages-section__text--has-icon-food {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+}
+
+.advantages-section__text--has-icon-souvenirs {
+  @media (min-width: $tablet-width) {
+    padding: 0 37px;
+  }
+}
+
+.advantages-section__text--has-line {
+  br {
+    display: none;
+  }
+}
+
+.advantages-section__text--has-line-road {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
   }
 }
 
