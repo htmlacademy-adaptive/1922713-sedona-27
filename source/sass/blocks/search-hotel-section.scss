@@ -28,13 +28,11 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 32px;
+  padding: 0 10px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
     padding: 0 50px;
-
-    br {
-      display: none;
-    }
   }
 }
 
