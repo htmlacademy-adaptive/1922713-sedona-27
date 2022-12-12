@@ -260,7 +260,7 @@
   width: 100%;
   height: 389px;
 
-  background-image: url("../../img/index/divider-main.svg"),
+  background-image: url("../../img/index/divider-main-mobile.svg"),
     url("../../img/index/main-background-mobile.png");
   background-position: bottom, 0 0;
   background-repeat: no-repeat;
@@ -272,8 +272,8 @@
     background-position: bottom center, 0 0;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   background-image: url("../../img/index/divider-main.svg"),
-  //     url("../../img/index/main-background-mobile.png");
-  // }
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/index/divider-main-desktop.svg"),
+      url("../../img/index/main-background-desktop.png");
+  }
 }

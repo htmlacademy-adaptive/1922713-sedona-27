@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    // justify-content: space-between;
+    justify-content: space-between;
     padding: 36px 36px 36px 61px;
   }
 
@@ -29,7 +29,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 111px;
+    // margin-right: 111px;
   }
 
   &:hover {
@@ -55,7 +55,7 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    margin-right: 101px;
+    // margin-right: 101px;
   }
 }
 
