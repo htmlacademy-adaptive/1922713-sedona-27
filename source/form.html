@@ -22,8 +22,8 @@
 
       <!-- <nav class="navigation navigation--closed navigation--nojs"> -->
       <!-- <nav class="navigation navigation--opened navigation--nojs"> -->
-      <nav class="navigation navigation--opened">
-        <!-- <nav class="navigation navigation--closed"> -->
+      <!-- <nav class="navigation navigation--opened"> -->
+      <nav class="navigation navigation--closed">
 
         <button class="button navigation-toggle-button" type="button">
           <span class="visually-hidden">открыть/закрыть меню.</span>
@@ -45,39 +45,41 @@
         </ul>
       </nav>
 
-      <img class="page-header__image" src="1" alt="Надпись Sedona." width="320" height="320">
+      <img class="page-header__image page-header__image--secondary" src="1" alt="Надпись Sedona." width="320"
+        height="320">
 
     </header>
 
 
     <main class="main">
 
-      <header class="main__header main__header--form">
-        <h1 class="main__title">оставьте свой отзыв</h1>
-        <p class="main__text">помогите нашим отелям стать лучше!<br> оставьте отзыв о<br> них, а также о
-          посещенных вами<br> достопримечательностях</p>
+      <header class="main__header main__header--secondary">
+        <h1 class="main__title main__title--secondary">оставьте свой отзыв</h1>
+        <p class="main__text main__text--secondary">помогите нашим отелям стать лучше! оставьте отзыв о них, а
+          также о посещенных вами достопримечательностях</p>
       </header>
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
         <!-- <h2 class="visually-hidden">Форма обратной связи</h2> -->
         <fieldset class="feedback-form__group feedback-form__group--person-information">
           <legend class="feedback-form__title">представьтесь:</legend>
-          <label class="feedback-form__label feedback-form__label--person-information" for="name">имя*</label>
+          <label class="feedback-form__label feedback-form__label--person-information" for="name">имя*:</label>
           <input class="feedback-form__input feedback-form__input--person-information" type="text" id="name" name="name"
             value="Пётр">
-          <label class="feedback-form__label feedback-form__label--person-information" for="surname">фамилия*</label>
+          <label class="feedback-form__label feedback-form__label--person-information" for="surname">фамилия*:</label>
           <input class="feedback-form__input feedback-form__input--person-information" type="text" id="surname"
             name="surname" value="Пустота">
-          <label class="feedback-form__label feedback-form__label--person-information" for="patronymic">отчество</label>
+          <label class="feedback-form__label feedback-form__label--person-information"
+            for="patronymic">отчество:</label>
           <input class="feedback-form__input feedback-form__input--person-information" type="text" id="patronymic"
             name="patronymic" value="Викторович">
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Укажите телефон и электронную почту</h2> -->
-        <fieldset class="feedback-form__group feedback-form__group--person-information">
+        <fieldset class="feedback-form__group feedback-form__group--person-information feedback-form__group--contacts">
           <legend class="feedback-form__title">контактная информация:</legend>
           <label class="feedback-form__label feedback-form__label--person-information" for="telephone">Контактный
-            телефон*</label>
+            телефон*:</label>
           <input class="feedback-form__input feedback-form__input--person-information feedback-form__input--contacts"
             type="tel" id="telephone" name="telephone" placeholder="Введите телефон">
           <label class="feedback-form__label feedback-form__label--person-information" for="email">Электронная

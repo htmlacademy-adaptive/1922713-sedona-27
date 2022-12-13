@@ -287,7 +287,9 @@
 }
 
 .advantages-section__text--true-city {
-  padding: 0 65px;
+  @media (min-width: $desktop-width) {
+    padding: 0 65px;
+  }
 }
 
 .advantages-section__text--has-icon {

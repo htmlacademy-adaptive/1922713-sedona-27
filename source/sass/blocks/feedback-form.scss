@@ -1,6 +1,20 @@
 .feedback-form {
   margin: 0 auto;
 
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: -25px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
+
+
   @media (min-width: $tablet-width) {
     display: grid;
     width: 648px;
@@ -15,11 +29,26 @@
 
 .feedback-form__group {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0;
   border: none;
 }
 
 .feedback-form__group--person-information {
+  padding: 0 0 50px 0;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &:not(:last-of-type)::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 25px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -27,7 +56,26 @@
   }
 }
 
+.feedback-form__group--contacts {
+  padding: 0 0 44px 0;
+}
+
 .feedback-form__group--impression {
+  padding: 11px 0 93px 0;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &:not(:last-of-type)::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 25px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +135,7 @@
 .feedback-form__title {
   @include fontsizes(18px, 26px, 700, $black);
   margin: 0;
+  margin-bottom: 19px;
   text-transform: uppercase;
   text-align: center;
 
@@ -101,11 +150,16 @@
 }
 
 .feedback-form__label--person-information {
+  padding: 0 0 0 36px;
   text-transform: uppercase;
+  border: none;
 }
 
 .feedback-form__input {
   @include fontsizes(18px, 26px, 700, $black);
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   &:hover {
     background-color: #e5e5e5;
@@ -122,13 +176,17 @@
 
 .feedback-form__input--person-information {
   width: 280px;
+  margin-bottom: 15px;
   padding: 16px 16px 16px 16px;
   background-color: $lightgray;
+  border: none;
+  letter-spacing: -1px;
 }
 
-.feedback-form__input--person-information::placeholder {
-  @include fontsizes(18px, 26px, 700, $black);
-}
+// .feedback-form__input--person-information::placeholder {
+//   @include fontsizes(30px, 26px, 700, $black);
+//   letter-spacing: 0.5;
+// }
 
 .feedback-form__input--contacts {
   @media (min-width: $tablet-width) {

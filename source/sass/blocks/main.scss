@@ -12,7 +12,9 @@
   }
 }
 
-.main__header--form {
+.main__header--secondary {
+  padding: 37px 18px 52px 18px;
+
   @media (min-width: $tablet-width) {
     width: 435px;
     // padding: 0 166px 56px 166px;
@@ -49,6 +51,10 @@
       display: none;
     }
   }
+}
+
+.main__title--secondary {
+  margin-bottom: 24px;
 }
 
 .main__text {
