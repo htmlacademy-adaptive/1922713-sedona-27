@@ -157,11 +157,19 @@
   @media (min-width: $tablet-width) {
     padding: 51px 0 52px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 0 52px 0;
+  }
 }
 
 .advantages-section__item--has-line-road {
   @media (min-width: $tablet-width) {
     padding: 40px 0 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 0 25px 0;
   }
 }
 
@@ -230,6 +238,10 @@
 
 .advantages-section__title--has-line {
   padding: 0 49px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 121px;
+  }
 }
 
 .advantages-section__text {
@@ -274,14 +286,8 @@
   }
 }
 
-.advantages-section__text--has-image {
-  @media (min-width: $desktop-width) {
-    padding: 0 83px;
-
-    br {
-      display: none;
-    }
-  }
+.advantages-section__text--true-city {
+  padding: 0 65px;
 }
 
 .advantages-section__text--has-icon {
@@ -318,11 +324,19 @@
   br {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 36px;
+  }
 }
 
 .advantages-section__text--has-line-road {
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 62px;
   }
 }
 

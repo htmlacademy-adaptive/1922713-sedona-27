@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 61px 377px 61px 371px;
+    padding: 59px 371px 66px 371px;
   }
 }
 
@@ -27,6 +27,7 @@
   @include fontsizes(14px, 21px, 700, $lightblack);
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 32px;
   padding: 0 15px;
 
@@ -39,6 +40,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 42px;
     padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+    padding: 0;
   }
 }
 
