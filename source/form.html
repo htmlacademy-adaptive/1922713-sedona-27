@@ -80,43 +80,66 @@
           <legend class="feedback-form__title">контактная информация:</legend>
           <label class="feedback-form__label feedback-form__label--person-information" for="telephone">Контактный
             телефон*:</label>
-          <input class="feedback-form__input feedback-form__input--person-information feedback-form__input--contacts"
+          <input
+            class="feedback-form__input feedback-form__input--person-information feedback-form__input--contacts feedback-form__input--contacts-phone"
             type="tel" id="telephone" name="telephone" placeholder="Введите телефон">
           <label class="feedback-form__label feedback-form__label--person-information" for="email">Электронная
             почта*:</label>
-          <input class="feedback-form__input feedback-form__input--person-information feedback-form__input--contacts"
+          <input
+            class="feedback-form__input feedback-form__input--person-information feedback-form__input--contacts feedback-form__input--contacts-email"
             type="email" id="email" name="email" placeholder="Введите e-mail">
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Укажите Ваш общее впечатление</h2> -->
         <fieldset class="feedback-form__group feedback-form__group--size-xxl feedback-form__group--impression">
           <legend class="feedback-form__title">ваше общее впечатление:</legend>
-          <label class="feedback-form__label feedback-form__label--impression" for="good">Скорее
-            положительное</label>
-          <input class="feedback-form__input" type="radio" id="good" name="impression" value="good" checked>
-          <label class="feedback-form__label feedback-form__label--impression" for="bad">Скорее
-            отрицательное</label>
-          <input class="feedback-form__input" type="radio" id="bad" name="impression" value="bad">
-          <label class="feedback-form__label feedback-form__label--impression" for="no-answer">Затрудняюсь
-            ответить</label>
-          <input class="feedback-form__input" type="radio" id="no-answer" name="impression" value="no-answer">
+          <label class="feedback-form__label feedback-form__label--impression" for="good">
+            <input class="feedback-form__input visually-hidden" type="radio" id="good" name="impression" value="good"
+              checked>
+            <span class="feedback-form__control-mark feedback-form__control-mark--radio"></span>
+            <span class="feedback-form__control-label">Скорее положительное</span>
+          </label>
+          <label class="feedback-form__label feedback-form__label--impression" for="bad">
+            <input class="feedback-form__input visually-hidden" type="radio" id="bad" name="impression" value="bad">
+            <span class="feedback-form__control-mark feedback-form__control-mark--radio"></span>
+            <span class="feedback-form__control-label">Скорее отрицательное</span>
+          </label>
+          <label class="feedback-form__label feedback-form__label--impression" for="no-answer">
+            <input class="feedback-form__input visually-hidden" type="radio" id="no-answer" name="impression"
+              value="no-answer">
+            <span class="feedback-form__control-mark feedback-form__control-mark--radio"></span>
+            <span class="feedback-form__control-label">Затрудняюсь ответить</span>
+          </label>
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Укажите посещенные достопримечательности:</h2> -->
         <fieldset class="feedback-form__group feedback-form__group--size-xxl feedback-form__group--attractions">
-          <legend class="feedback-form__title">посещенные достопримечательности:</legend>
-          <label class="feedback-form__label feedback-form__label--attractions" for="devils-bridge">Мост Дьявола</label>
-          <input class="feedback-form__input" type="checkbox" id="devils-bridge" name="attractions"
-            value="devils-bridge" checked>
-          <label class="feedback-form__label feedback-form__label--attractions"
-            for="the-bell-mountain">Гора-Колокол</label>
-          <input class="feedback-form__input" type="checkbox" id="the-bell-mountain" name="attractions"
-            value="the-bell-mountain" checked>
-          <label class="feedback-form__label feedback-form__label--attractions" for="slide-park">Слайд-парк</label>
-          <input class="feedback-form__input" type="checkbox" id="slide-park" name="attractions" value="slide-park"
-            checked>
-          <label class="feedback-form__label feedback-form__label--attractions" for="red-rocks">Красные скалы</label>
-          <input class="feedback-form__input" type="checkbox" id="red-rocks" name="attractions" value="red-rocks">
+          <legend class="feedback-form__title feedback-form__title--attractions">посещенные достопримечательности:
+          </legend>
+          <label class="feedback-form__label feedback-form__label--attractions" for="devils-bridge">
+            <input class="feedback-form__input visually-hidden" type="checkbox" id="devils-bridge" name="attractions"
+              value="devils-bridge" checked>
+            <span class="feedback-form__control-mark feedback-form__control-mark--checkbox"></span>
+            <span class="feedback-form__control-label">Мост Дьявола</span>
+          </label>
+          <label class="feedback-form__label feedback-form__label--attractions" for="the-bell-mountain">
+            <input class="feedback-form__input visually-hidden" type="checkbox" id="the-bell-mountain"
+              name="attractions" value="the-bell-mountain" checked>
+            <span class="feedback-form__control-mark feedback-form__control-mark--checkbox"></span>
+            <span class="feedback-form__control-label">Гора-Колокол</span>
+          </label>
+          <label class="feedback-form__label feedback-form__label--attractions" for="slide-park">
+            <input class="feedback-form__input visually-hidden" type="checkbox" id="slide-park" name="attractions"
+              value="slide-park" checked>
+            <span class="feedback-form__control-mark feedback-form__control-mark--checkbox"></span>
+            <span class="feedback-form__control-label">Слайд-парк</span>
+          </label>
+          <label class="feedback-form__label feedback-form__label--attractions" for="red-rocks">
+            <input class="feedback-form__input visually-hidden" type="checkbox" id="red-rocks" name="attractions"
+              value="red-rocks">
+            <span class="feedback-form__control-mark feedback-form__control-mark--checkbox"></span>
+            <span class="feedback-form__control-label">Красные скалы</span>
+          </label>
         </fieldset>
 
         <!-- <h2 class="visually-hidden">Расскажите нам о своих эмоциях:</h2> -->
