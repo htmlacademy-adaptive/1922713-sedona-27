@@ -281,7 +281,7 @@
   }
 }
 
-.page-header__image--secondary {
+.page-header__image--form {
   height: 158px;
 
   background-image: url("../../img/index/divider-main-desktop.svg"),
@@ -290,10 +290,10 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    height: 518px;
+    height: 290px;
     background-image: url("../../img/index/divider-main-desktop.svg"),
       url("../../img/index/main-background-desktop.png");
-    background-position: bottom center, center top;
+    background-position: bottom center, center bottom;
   }
 
   @media (min-width: $desktop-width) {

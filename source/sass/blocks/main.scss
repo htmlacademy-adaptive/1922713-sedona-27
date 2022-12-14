@@ -12,16 +12,16 @@
   }
 }
 
-.main__header--secondary {
+.main__header--form {
   padding: 37px 18px 27px 18px;
 
   @media (min-width: $tablet-width) {
     width: 435px;
-    // padding: 0 166px 56px 166px;
+    padding: 64px 0 50px 0;
   }
 
   // @media (min-width: $desktop-width) {
-  //   padding: 0 382px 44px 382px;
+
   // }
 }
 
@@ -53,8 +53,14 @@
   }
 }
 
-.main__title--secondary {
+.main__title--form {
+
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 19px;
+  }
 }
 
 .main__text {
