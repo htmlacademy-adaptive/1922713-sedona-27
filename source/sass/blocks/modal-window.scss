@@ -32,7 +32,7 @@
 
 .modal-window--valid-success {
   width: 320px;
-  padding: 53px 0 44px 0;
+  padding: 37px 0 0 0;
 
   @media (min-width: $tablet-width) {
     width: 640px;
@@ -64,6 +64,9 @@
 }
 
 .modal-window__text--valid-success {
+  padding: 0 53px;
+  margin-bottom: 53px;
+
   @media (min-width: $tablet-width) {
     padding: 0 110px 0 110px;
 
@@ -104,8 +107,9 @@
 }
 
 .modal-window__button-success {
-  // width: 180px;
+  width: 280px;
   padding: 18px 64px 14px 63px;
+  letter-spacing: -1px;
 
   @media (min-width: $tablet-width) {
     width: 458px;
@@ -115,6 +119,7 @@
 
 .modal-window__button-container {
   width: 100%;
-  padding: 44px 0 44px 0;
+  padding: 20px;
   background-color: $lightgray;
+  box-sizing: border-box;
 }
