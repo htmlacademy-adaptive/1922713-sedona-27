@@ -19,6 +19,10 @@
   margin: auto;
   background-color: $white;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 347px;
+  }
 }
 
 .modal-window--failure {
@@ -27,7 +31,6 @@
 
   @media (min-width: $tablet-width) {
     width: 400px;
-    min-height: 347px;
     padding: 0;
     // padding: 45px 60px 35px 60px;
     // padding: 20px 0 20px;
@@ -58,6 +61,12 @@
   }
 }
 
+.modal-window__title--valid-success {
+  @media (min-width: $tablet-width) {
+    padding: 7px 0 24px 0;
+  }
+}
+
 .modal-window__text {
   @include fontsizes(14px, 21px, 400, $lightblack);
   margin: 0;
@@ -80,6 +89,7 @@
   margin-bottom: 53px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
     padding: 0 110px 0 110px;
 
     br {
@@ -124,8 +134,10 @@
   letter-spacing: -1px;
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
     width: 458px;
-    padding: 18px 140px 14px 139px;
+    padding: 18px 18px 14px 18px;
+    // letter-spacing: 0;
   }
 }
 
@@ -134,4 +146,8 @@
   padding: 20px;
   background-color: $lightgray;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px;
+  }
 }
