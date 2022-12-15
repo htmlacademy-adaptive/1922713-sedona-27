@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: 324px 324px;
     width: 648px;
-    padding: 25px 0 0 0;
+    padding: 25px 0 49px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,14 +121,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    // display: grid;
-    // grid-template-columns: 224px 224px;
-    // grid-column-gap: 32px;
-    width: 480px;
+    display: grid;
+    grid-template-columns: 84px 224px 224px 84px;
     margin: 0 auto;
-    padding: 38px 0 0 0;
+    padding: 39px 0 0 0;
   }
 }
 
@@ -173,12 +169,26 @@
 }
 
 .feedback-form__group--size-xxl-attractions {
-  &::before {
-    top: -27px;
-  }
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: -27px;
+    }
 
-  &::after {
-    top: -27px;
+    &::after {
+      top: -27px;
+    }
+  }
+}
+
+.feedback-form__group--size-xxl-emotions {
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: -42px;
+    }
+
+    &::after {
+      top: -42px;
+    }
   }
 }
 
@@ -199,6 +209,12 @@
 .feedback-form__title--attractions {
   @media (min-width: $tablet-width) {
     padding: 10px 117px 0 117px;
+  }
+}
+
+.feedback-form__title--emotions {
+  @media (min-width: $tablet-width) {
+    padding: 16px 0 27px 0;
   }
 }
 
@@ -339,7 +355,7 @@
   width: 22px;
   height: 16px;
   top: 15px;
-  left: 12px;
+  left: 10px;
   background-image: url("../../img/form/tick.svg");
 }
 
@@ -352,13 +368,25 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    grid-column: 2/3;
     width: 224px;
-    padding: 0 10px 36px 81px;
+    padding: 0 0 36px 63px;
+  }
+}
+
+.feedback-form__label--attractions:nth-of-type(2n) {
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    padding: 0 0 0 94px;
   }
 }
 
 .feedback-form__group--emotions {
-  padding: 0 0 53px 0;
+  padding: 0 0 44px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 48px 0;
+  }
 }
 
 .feedback-form__textarea {
@@ -366,7 +394,7 @@
   display: block;
   width: 279px;
   margin: 0 auto;
-  padding: 16px 16px 5px 16px;
+  padding: 16px 16px 14px 16px;
   background-color: $lightgray;
   resize: none;
   border: none;
@@ -456,7 +484,8 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    padding: 16px 71px 16px 71px;
+    margin: 0;
+    padding: 16px 16px 16px 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -472,4 +501,9 @@
   text-align: right;
   text-transform: uppercase;
   opacity: 0.6;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    padding: 23px 0 0 0;
+  }
 }
