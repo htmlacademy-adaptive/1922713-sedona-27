@@ -44,6 +44,10 @@
   @media (min-width: $tablet-width) {
     width: 640px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 0 0 0;
+  }
 }
 
 .modal-window__title {
@@ -64,6 +68,10 @@
 .modal-window__title--valid-success {
   @media (min-width: $tablet-width) {
     padding: 7px 0 24px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 24px 0;
   }
 }
 
@@ -95,6 +103,10 @@
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
   }
 }
 
