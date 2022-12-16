@@ -121,39 +121,41 @@
 }
 
 .navigation--opened .navigation-toggle-button:hover {
-  &::before {
-    opacity: 0.6;
-    // background-color: rgba($white, 0.6);
-  }
+  opacity: 0.6;
 
-  &::after {
-    opacity: 0.6;
-    // background-color: rgba($white, 0.6);
-  }
+  // &::before {
+  //   opacity: 0.6;
+  //   // background-color: rgba($white, 0.6);
+  // }
+
+  // &::after {
+  //   opacity: 0.6;
+  //   // background-color: rgba($white, 0.6);
+  // }
 }
 
 .navigation--opened .navigation-toggle-button:focus {
-  &::before {
-    opacity: 0.6;
-    // background-color: rgba($white, 0.6);
-  }
+  opacity: 0.6;
+  // &::before {
+  //   // background-color: rgba($white, 0.6);
+  // }
 
-  &::after {
-    opacity: 0.6;
-    // background-color: rgba($white, 0.6);
-  }
+  // &::after {
+  //   opacity: 0.6;
+  //   // background-color: rgba($white, 0.6);
+  // }
 }
 
 .navigation--opened .navigation-toggle-button:active {
-  &::before {
-    opacity: 0.3;
-    // background-color: rgba($white, 0.3);
-  }
+  opacity: 0.3;
+  // &::before {
+  //   // background-color: rgba($white, 0.3);
+  // }
 
-  &::after {
-    opacity: 0.3;
-    // background-color: rgba($white, 0.3);
-  }
+  // &::after {
+  //   opacity: 0.3;
+  //   // background-color: rgba($white, 0.3);
+  // }
 }
 
 .navigation--closed .navigation__list {
