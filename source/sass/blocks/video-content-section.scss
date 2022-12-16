@@ -8,6 +8,10 @@
   margin-bottom: 27px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video-content-section__text {
@@ -32,5 +36,12 @@
     br {
       display: none;
     }
+  }
+}
+
+.video-content-section__video {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
   }
 }

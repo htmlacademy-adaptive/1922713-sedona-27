@@ -28,6 +28,14 @@
 
 .main__header--catalog {
   padding: 38px 18px 38px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 0 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 99px 0 50px 0;
+  }
 }
 
 .main__title {
@@ -53,6 +61,16 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.main__title--catalog {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
