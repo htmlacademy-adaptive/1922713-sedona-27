@@ -87,6 +87,7 @@
   // height: 4px;
   top: -49px;
   right: 19px;
+  // background-color: $white;
 
   &::before {
     content: "";
@@ -121,31 +122,37 @@
 
 .navigation--opened .navigation-toggle-button:hover {
   &::before {
-    background-color: rgba($white, 0.6);
+    opacity: 0.6;
+    // background-color: rgba($white, 0.6);
   }
 
   &::after {
-    background-color: rgba($white, 0.6);
+    opacity: 0.6;
+    // background-color: rgba($white, 0.6);
   }
 }
 
 .navigation--opened .navigation-toggle-button:focus {
   &::before {
-    background-color: rgba($white, 0.6);
+    opacity: 0.6;
+    // background-color: rgba($white, 0.6);
   }
 
   &::after {
-    background-color: rgba($white, 0.6);
+    opacity: 0.6;
+    // background-color: rgba($white, 0.6);
   }
 }
 
 .navigation--opened .navigation-toggle-button:active {
   &::before {
-    background-color: rgba($white, 0.3);
+    opacity: 0.3;
+    // background-color: rgba($white, 0.3);
   }
 
   &::after {
-    background-color: rgba($white, 0.3);
+    opacity: 0.3;
+    // background-color: rgba($white, 0.3);
   }
 }
 
@@ -283,7 +290,6 @@
 
 .page-header__image--form {
   height: 158px;
-
   background-image: url("../../img/index/divider-main-desktop.svg"),
     url("../../img/index/main-background-mobile.png");
   background-position: bottom, bottom left -2px;
@@ -297,7 +303,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 300px;
     background-image: url("../../img/index/divider-main-desktop.svg"),
       url("../../img/index/main-background-desktop.png");
+    background-position: center bottom -1px, bottom left 0;
   }
 }

@@ -19,12 +19,13 @@
     display: grid;
     grid-template-columns: 324px 324px;
     width: 648px;
-    padding: 25px 0 49px 0;
+    padding: 30px 0 49px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 960px;
     grid-template-columns: 480px 480px;
+    padding: 29px 0 49px 0;
   }
 }
 
@@ -32,8 +33,52 @@
   margin: 0;
   padding: 0 0 0 0;
   border: none;
+  box-sizing: border-box;
 }
 
+.feedback-form__title {
+  @include fontsizes(18px, 26px, 700, $black);
+  // margin: 0;
+  padding-top: 25px;
+  padding-bottom: 19px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 16px;
+  }
+}
+
+.feedback-form__label {
+  @include fontsizes(14px, 21px, 400, $lightblack);
+  // margin-bottom: 16px;
+}
+
+.feedback-form__input {
+  @include fontsizes(18px, 26px, 700, $black);
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #e5e5e5;
+  }
+
+  // &:not(:placeholder-shown) {
+  //   background-color: $white;
+  // }
+}
+
+//Группа для персональных данных - фио, телефон, почта
 .feedback-form__group--person-information {
   padding: 0 0 25px 0;
 
@@ -59,6 +104,31 @@
   }
 }
 
+.feedback-form__label--person-information {
+  padding: 0 0 0 36px;
+  text-transform: uppercase;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 16px;
+  }
+}
+
+.feedback-form__input--person-information {
+  width: 280px;
+  margin-bottom: 15px;
+  padding: 16px 16px 16px 16px;
+  background-color: $lightgray;
+  border: none;
+  letter-spacing: -1px;
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+    padding: 17px 16px 16px 16px;
+  }
+}
+
+// Группа для контактных данных - телефон, почта
 .feedback-form__group--contacts {
   padding: 0 0 19px 0;
 
@@ -75,8 +145,48 @@
       background-color: $darkgray;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      bottom: 26px;
+      left: 13px;
+    }
+  }
 }
 
+.feedback-form__input--contacts {
+  &:not(:placeholder-shown) {
+    background-color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 402px;
+  }
+}
+
+.feedback-form__input--contacts-phone {
+  padding-right: 74px;
+  background-image: url("../../img/form/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.feedback-form__input--contacts-email {
+  padding-right: 74px;
+  background-image: url("../../img/form/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.feedback-form__input--contacts::placeholder {
+  opacity: 0.3;
+}
+
+// Группа для радио инпутов - впечатление
 .feedback-form__group--impression {
   padding: 11px 0 0 0;
 
@@ -102,8 +212,60 @@
     margin: 0 auto;
     padding: 12px 0 12px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    padding: 0 45px 43px 60px;
+  }
 }
 
+.feedback-form__title--impression {
+  @media (min-width: $desktop-width) {
+    padding: 31px 15px 55px 0;
+  }
+}
+
+.feedback-form__label--impression {
+  @include fontsizes(18px, 26px, 700, $black);
+  position: relative;
+  display: block;
+  padding-bottom: 36px;
+  padding-left: 81px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 36px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 54px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+  }
+}
+
+.feedback-form__label--impression:nth-of-type(3n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    padding-left: 59px;
+  }
+}
+
+.feedback-form__label--impression:nth-of-type(2n+1) {
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    grid-column: 2/3;
+  }
+}
+
+.feedback-form__label--impression:nth-of-type(2n) {
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    grid-column: 3/4;
+    padding: 0 0 36px 70px;
+  }
+}
+
+// Группа для чекбоксов - достопримечательности
 .feedback-form__group--attractions {
   padding: 9px 0 0 0;
 
@@ -126,8 +288,30 @@
     margin: 0 auto;
     padding: 39px 0 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0 auto;
+    padding: 39px 50px 0 26px;
+  }
 }
 
+.feedback-form__label--attractions {
+  @include fontsizes(18px, 26px, 700, $black);
+  position: relative;
+  display: block;
+  padding-bottom: 36px;
+  padding-left: 81px;
+}
+
+.feedback-form__label--attractions:nth-of-type(2n) {
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    padding: 0 0 0 94px;
+  }
+}
+
+// Группа для групп, которые занимает два столбца на планшете и десктопе
 .feedback-form__group--size-xxl {
   position: relative;
   grid-column: 1/-1;
@@ -155,17 +339,29 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
-    grid-template-columns: 480px 480px;
-
     &::before {
       width: 280px;
+      top: -70px;
     }
 
     &::after {
       width: 280px;
+      top: -70px;
     }
   }
+
+  // @media (min-width: $desktop-width) {
+  //   width: 960px;
+  //   grid-template-columns: 480px 480px;
+
+  //   &::before {
+  //     width: 280px;
+  //   }
+
+  //   &::after {
+  //     width: 280px;
+  //   }
+  // }
 }
 
 .feedback-form__group--size-xxl-attractions {
@@ -177,6 +373,26 @@
     &::after {
       top: -27px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: -58px;
+    }
+
+    &::after {
+      top: -58px;
+    }
+  }
+}
+
+.feedback-form__title--attractions {
+  @media (min-width: $tablet-width) {
+    padding: 10px 117px 0 117px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 330px 31px 330px;
   }
 }
 
@@ -192,200 +408,18 @@
   }
 }
 
-.feedback-form__title {
-  @include fontsizes(18px, 26px, 700, $black);
-  // margin: 0;
-  padding-top: 25px;
-  padding-bottom: 19px;
-  text-transform: uppercase;
-  text-align: center;
+// Группа для textarea
+.feedback-form__group--emotions {
+  padding: 0 0 44px 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
-    padding-bottom: 27px;
-  }
-}
-
-.feedback-form__title--attractions {
-  @media (min-width: $tablet-width) {
-    padding: 10px 117px 0 117px;
+    padding: 0 0 48px 0;
   }
 }
 
 .feedback-form__title--emotions {
   @media (min-width: $tablet-width) {
     padding: 16px 0 27px 0;
-  }
-}
-
-.feedback-form__label {
-  @include fontsizes(14px, 21px, 400, $lightblack);
-  // margin-bottom: 16px;
-}
-
-.feedback-form__label--person-information {
-  padding: 0 0 0 36px;
-  text-transform: uppercase;
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 0 0 16px;
-  }
-}
-
-.feedback-form__input {
-  @include fontsizes(18px, 26px, 700, $black);
-  display: block;
-  margin: 0 auto;
-  box-sizing: border-box;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:focus {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: $white;
-  }
-}
-
-.feedback-form__input--person-information {
-  width: 280px;
-  margin-bottom: 15px;
-  padding: 16px 16px 16px 16px;
-  background-color: $lightgray;
-  border: none;
-  letter-spacing: -1px;
-}
-
-// .feedback-form__input--person-information::placeholder {
-//   @include fontsizes(30px, 26px, 700, $black);
-//   letter-spacing: 0.5;
-// }
-
-.feedback-form__input--contacts {
-  @media (min-width: $tablet-width) {
-    margin-left: auto;
-  }
-}
-
-.feedback-form__input--contacts-phone {
-  background-image: url("../../img/form/phone-icon.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.feedback-form__input--contacts-email {
-  background-image: url("../../img/form/email-icon.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.feedback-form__input--contacts::placeholder {
-  opacity: 0.3;
-}
-
-.feedback-form__label--impression {
-  @include fontsizes(18px, 26px, 700, $black);
-  position: relative;
-  display: block;
-  padding-bottom: 36px;
-  padding-left: 81px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 0 36px 54px;
-  }
-}
-
-.feedback-form__label--impression:nth-of-type(2n+1) {
-  grid-column: 2/3;
-}
-
-.feedback-form__label--impression:nth-of-type(2n) {
-  @media (min-width: $tablet-width) {
-    grid-column: 3/4;
-    padding: 0 0 36px 70px;
-  }
-}
-
-// .feedback-form__input--impression {
-//   @include fontsizes(18px, 26px, 700, $black);
-//   display: block;
-//   margin-bottom: 24px;
-//   padding-left: 81px;
-// }
-
-.feedback-form__control-mark {
-  content: "";
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  top: -11px;
-  margin-left: -61px;
-  // left: 20px;
-  background-color: $lightgray;
-
-  // @media (min-width: $tablet-width) {
-  //   left: -8px;
-  //   margin-left: -61px;
-  // }
-}
-
-.feedback-form__control-mark--radio {
-  border-radius: 50%;
-}
-
-.feedback-form__input:checked + .feedback-form__control-mark--radio::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 15px;
-  left: 15px;
-  background-color: $lightblack;
-  border-radius: 50%;
-}
-
-.feedback-form__input:checked + .feedback-form__control-mark--checkbox::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 16px;
-  top: 15px;
-  left: 10px;
-  background-image: url("../../img/form/tick.svg");
-}
-
-.feedback-form__label--attractions {
-  @include fontsizes(18px, 26px, 700, $black);
-  position: relative;
-  display: block;
-  padding-bottom: 36px;
-  padding-left: 81px;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 2/3;
-    width: 224px;
-    padding: 0 0 36px 63px;
-  }
-}
-
-.feedback-form__label--attractions:nth-of-type(2n) {
-  @media (min-width: $tablet-width) {
-    grid-column: 3/4;
-    padding: 0 0 0 94px;
-  }
-}
-
-.feedback-form__group--emotions {
-  padding: 0 0 44px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 0 48px 0;
   }
 }
 
@@ -427,19 +461,62 @@
   opacity: 0.3;
 }
 
-// .feedback-form__input--emotions {
-//   width: 279px;
-//   min-height: 150px;
-//   padding: 16px 16px 16px 16px;
-//   background-color: $lightgray;
-// }
+.feedback-form__control-mark {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: -11px;
+  margin-left: -61px;
+  // left: 20px;
+  background-color: $lightgray;
 
-// .feedback-form__input--emotions::placeholder {
-//   @include fontsizes(18px, 26px, 700, $black);
-//   opacity: 0.3;
-//   white-space: pre-wrap;
-//   transform: translateY(-50px);
-// }
+  // @media (min-width: $tablet-width) {
+  //   left: -8px;
+  //   margin-left: -61px;
+  // }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.feedback-form__control-mark--radio {
+  border-radius: 50%;
+}
+
+.feedback-form__input:checked + .feedback-form__control-mark--radio::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 15px;
+  background-color: $lightblack;
+  border-radius: 50%;
+}
+
+.feedback-form__input:checked + .feedback-form__control-mark--radio:active::before {
+  opacity: 0.3;
+}
+
+.feedback-form__input:checked + .feedback-form__control-mark--checkbox::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  top: 15px;
+  left: 10px;
+  background-image: url("../../img/form/tick.svg");
+}
+
+.feedback-form__input:checked + .feedback-form__control-mark--checkbox:active::before {
+  opacity: 0.3;
+}
 
 .feedback-form-container {
   padding-bottom: 15px;

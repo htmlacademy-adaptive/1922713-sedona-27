@@ -20,6 +20,11 @@
     padding: 64px 0 50px 0;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 435px;
+    padding: 116px 0 11px 0;
+  }
+
   // @media (min-width: $desktop-width) {
 
   // }
@@ -54,12 +59,15 @@
 }
 
 .main__title--form {
-
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
   }
 }
 
@@ -70,7 +78,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    line-height: 26px;
+    line-height: 24px;
 
     br {
       display: none;
