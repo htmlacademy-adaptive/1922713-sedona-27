@@ -4,13 +4,17 @@
 
 .video-content-section__slogan {
   @include fontsizes(18px, 26px, 700, $black);
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 27px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .video-content-section__text {
   @include fontsizes(14px, 21px, 400, $lightblack);
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 22px;
   text-align: center;
   text-transform: uppercase;
 

@@ -121,41 +121,42 @@
 }
 
 .navigation--opened .navigation-toggle-button:hover {
-  opacity: 0.6;
+  // opacity: 0.6;
 
-  // &::before {
-  //   opacity: 0.6;
-  //   // background-color: rgba($white, 0.6);
-  // }
+  &::before {
+    opacity: 0.6;
+    background-color: rgba($white, 0.6);
+  }
 
-  // &::after {
-  //   opacity: 0.6;
-  //   // background-color: rgba($white, 0.6);
-  // }
+  &::after {
+    opacity: 0.6;
+    background-color: rgba($white, 0.6);
+  }
 }
 
 .navigation--opened .navigation-toggle-button:focus {
-  opacity: 0.6;
-  // &::before {
-  //   // background-color: rgba($white, 0.6);
-  // }
+  // opacity: 0.6;
+  &::before {
+    background-color: rgba($white, 0.6);
+  }
 
-  // &::after {
-  //   opacity: 0.6;
-  //   // background-color: rgba($white, 0.6);
-  // }
+  &::after {
+    opacity: 0.6;
+    background-color: rgba($white, 0.6);
+  }
 }
 
-.navigation--opened .navigation-toggle-button:active {
-  opacity: 0.3;
-  // &::before {
-  //   // background-color: rgba($white, 0.3);
-  // }
 
-  // &::after {
-  //   opacity: 0.3;
-  //   // background-color: rgba($white, 0.3);
-  // }
+.navigation--opened .navigation-toggle-button:active {
+  // opacity: 0.3;
+  &::before {
+    // background-color: rgba($white, 0.3);
+  }
+
+  &::after {
+    opacity: 0.3;
+    // background-color: rgba($white, 0.3);
+  }
 }
 
 .navigation--closed .navigation__list {
@@ -290,7 +291,7 @@
   }
 }
 
-.page-header__image--form {
+.page-header__image--secondary {
   height: 158px;
   background-image: url("../../img/index/divider-main-desktop.svg"),
     url("../../img/index/main-background-mobile.png");
