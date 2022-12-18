@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon152.svg">
 </head>
 
 <body class="page__body">
@@ -46,9 +47,11 @@
         </ul>
       </nav>
 
-      <img class="page-header__image" src="1"
-        alt="Приветственная надпись Welcome to the gorgeous Sedona! Because the Grand Canyon Sucks! на фоне гор."
-        width="320" height="320">
+      <div class="page-header-container">
+        <img class="page-header__image" src="img/index/welcome-text.svg"
+          alt="Приветственная надпись Welcome to the gorgeous Sedona! Because the Grand Canyon Sucks! на фоне гор."
+          width="282" height="214">
+      </div>
 
     </header>
 
@@ -73,7 +76,14 @@
                 class="advantages-section__text advantages-section__text--has-image advantages-section__text--true-city">
                 Седона не аттракцион для туристов, <br>там течет своя жизнь</p>
             </div>
-            <img class="advantages-section__image" src="1" width="320" height="260" alt="Город на фоне гор.">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/index/city-desktop.jpg, img/index/city-desktop@2x.jpg 2x"
+                width="800" height="256">
+              <source media="(min-width:768px)" srcset="img/index/city-tablet.jpg, img/index/city-tablet@2x.jpg 2x"
+                width="512" height="256">
+              <img class="advantages-section__image" src="img/index/city-mobile.jpg"
+                srcset="img/index/city-mobile@2x.jpg 2x" width="320" height="260" alt="Город на фоне гор.">
+            </picture>
             <ul class="advantages-section__advantages-section-city-list">
               <li
                 class="advantages-section__item advantages-section__item--has-icon advantages-section__item--has-icon-house">
@@ -108,8 +118,15 @@
                 вы<br> осмелитесь, конечно
               </p>
             </div>
-            <img class="advantages-section__image advantages-section__image--change-order" src="1" alt="Мост дьявола."
-              width="320" height="260">
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="img/index/bridge-desktop.jpg, img/index/bridge-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width:768px)" srcset="img/index/bridge-tablet.jpg, img/index/bridge-tablet@2x.jpg 2x"
+                width="512" height="256">
+              <img class="advantages-section__image advantages-section__image--change-order"
+                src="img/index/bridge-mobile.jpg" srcset="img/index/bridge-mobile@2x.jpg 2x" alt="Мост дьявола."
+                width="320" height="260">
+            </picture>
           </li>
 
           <li class="advantages-section__item advantages-section__item--has-line">
