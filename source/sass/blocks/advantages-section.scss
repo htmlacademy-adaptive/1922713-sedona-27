@@ -187,6 +187,15 @@
   }
 }
 
+.advantages-section__container--change-order {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    //других order нет
+    order: 1;
+  }
+}
+
 .advantages-section__title {
   @include fontsizes(18px, 26px, 700, $black);
   margin: 0;
@@ -351,13 +360,6 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
-  }
-}
-
-.advantages-section__image--change-order {
-  @media (min-width: $tablet-width) {
-    //других order на странице нет
-    order: -1;
   }
 }
 

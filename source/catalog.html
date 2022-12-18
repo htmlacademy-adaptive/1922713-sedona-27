@@ -47,8 +47,10 @@
         </ul>
       </nav>
 
-      <img class="page-header__image page-header__image--secondary" src="1" alt="Надпись Sedona." width="320"
-        height="320">
+      <div class="page-header-container page-header-container--secondary">
+        <img class="page-header__image page-header__image--secondary" src="img/form/sedona-text.svg"
+          alt="Надпись Sedona." width="229" height="39">
+      </div>
 
     </header>
 
@@ -66,7 +68,15 @@
         <ul class="photo-content-section__list">
 
           <li class="photo-content-section__item photo-content-section__item--size-xxl">
-            <img class="photo-content-section__image" src="1" alt="Закат." width="280" height="280">
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="img/catalog/photo-1-desktop.jpg, img/catalog/photo-1-desktop@2x.jpg 2x" width="1200"
+                height="400">
+              <source media="(min-width:768px)"
+                srcset="img/catalog/photo-1-tablet.jpg, img/catalog/photo-1-tablet@2x.jpg 2x" width="648" height="400">
+              <img class="photo-content-section__image" src="img/catalog/photo-1-mobile.jpg"
+                srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Закат." width="280" height="280">
+            </picture>
             <div class="photo-content-container">
               <h3 class="photo-content-section__title">неродные просторы</h3>
               <p class="photo-content-section__author-name">Автор фото: Борис</p>
@@ -77,7 +87,15 @@
           </li>
 
           <li class="photo-content-section__item">
-            <img class="photo-content-section__image" src="1" alt="Цветущие кактусы." width="280" height="280">
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="img/catalog/photo-2-desktop.jpg, img/catalog/photo-2-desktop@2x.jpg 2x" width="400"
+                height="267">
+              <source media="(min-width:768px)"
+                srcset="img/catalog/photo-2-tablet.jpg, img/catalog/photo-2-tablet@2x.jpg 2x" width="324" height="267">
+              <img class=" photo-content-section__image" src="img/catalog/photo-2-mobile.jpg"
+                srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Цветущие кактусы." width="280" height="280">
+            </picture>
             <div class="photo-content-container">
               <h3 class="photo-content-section__title">местная растительность</h3>
               <p class="photo-content-section__author-name">Автор фото: Сергей</p>
@@ -88,7 +106,15 @@
           </li>
 
           <li class="photo-content-section__item">
-            <img class="photo-content-section__image" src="1" alt="Горная дорога." width="280" height="280">
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="img/catalog/photo-3-desktop.jpg, img/catalog/photo-3-desktop@2x.jpg 2x" width="400"
+                height="267">
+              <source media="(min-width:768px)"
+                srcset="img/catalog/photo-3-tablet.jpg, img/catalog/photo-3-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="photo-content-section__image" src="img/catalog/photo-3-mobile.jpg"
+                srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Горная дорога." width="280" height="280">
+            </picture>
             <div class="photo-content-container">
               <h3 class="photo-content-section__title">дорога на север</h3>
               <p class="photo-content-section__author-name">Автор фото: Петр</p>
@@ -99,8 +125,16 @@
           </li>
 
           <li class="photo-content-section__item">
-            <img class="photo-content-section__image" src="1" alt="Местная достопримечательность - скалы в виде моста."
-              width="280" height="280">
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="img/catalog/photo-4-desktop.jpg, img/catalog/photo-4-desktop@2x.jpg 2x" width="400"
+                height="267">
+              <source media="(min-width:768px)"
+                srcset="img/catalog/photo-4-tablet.jpg, img/catalog/photo-4-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="photo-content-section__image" src="img/catalog/photo-4-mobile.jpg"
+                srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Местная достопримечательность - скалы в виде моста."
+                width="280" height="280">
+            </picture>
             <div class="photo-content-container">
               <h3 class="photo-content-section__title">мост дьявола</h3>
               <p class="photo-content-section__author-name">Автор фото: Антон</p>
