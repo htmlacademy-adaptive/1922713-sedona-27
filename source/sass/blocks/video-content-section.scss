@@ -1,16 +1,57 @@
 .video-content-section {
-  padding-top: 17px;
+  padding: 17px 0 0 0;
 }
 
 .video-content-section__slogan {
   @include fontsizes(18px, 26px, 700, $black);
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 27px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video-content-section__text {
   @include fontsizes(14px, 21px, 400, $lightblack);
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 22px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 160px 0 160px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 370px 0 370px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.video-content-section__video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
 }

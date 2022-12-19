@@ -1,7 +1,7 @@
 .photo-content-section__list {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0;
   list-style-type: none;
 
   @media (max-width: $mobile-width-only) {
@@ -10,14 +10,16 @@
       position: absolute;
       height: 1px;
       background-color: #e5e5e5;
-      left: 0;
+      top: -1px;
       right: 0;
+      left: 0;
     }
   }
 
   @media (min-width: $tablet-width) {
     width: 768px;
     display: grid;
+    justify-content: center;
     grid-template-columns: 324px 324px;
   }
 
@@ -29,6 +31,7 @@
 
 .photo-content-section__item {
   position: relative;
+  padding: 25px 0 25px 0;
 
   @media (max-width: $mobile-width-only) {
     &::after {
@@ -36,8 +39,9 @@
       position: absolute;
       height: 1px;
       background-color: #e5e5e5;
-      left: 0;
       right: 0;
+      bottom: 0;
+      left: 0;
     }
   }
 
@@ -68,15 +72,23 @@
 
 .photo-content-section__image {
   display: block;
+  // width: 100%;
+  margin: 0 auto;
+  margin-bottom: 14px;
 }
 
 .photo-content-section__title {
   @include fontsizes(14px, 21px, 700, $black);
+  margin: 0;
+  margin-bottom: 1px;
+  padding: 0 0 0 20px;
   text-transform: uppercase;
 }
 
 .photo-content-section__author-name {
   @include fontsizes(14px, 21px, 400, $lightblack);
+  margin: 0 0 15px 0;
+  padding: 0 0 0 20px;
 }
 
 .photo-content-section__button {

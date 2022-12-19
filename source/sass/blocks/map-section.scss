@@ -1,0 +1,12 @@
+.map-section__map {
+  display: block;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
