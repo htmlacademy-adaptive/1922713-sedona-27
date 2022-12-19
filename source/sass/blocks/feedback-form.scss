@@ -70,12 +70,8 @@
   }
 
   &:focus {
-    background-color: #e5e5e5;
+    background-color: $white;
   }
-
-  // &:not(:placeholder-shown) {
-  //   background-color: $white;
-  // }
 }
 
 //Группа для персональных данных - фио, телефон, почта

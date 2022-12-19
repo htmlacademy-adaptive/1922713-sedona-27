@@ -12,7 +12,7 @@
   width: 185px;
   margin: 0 auto;
   margin-bottom: -44px;
-  /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка закрытия меню (индекс 3)*/
+  /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка открытия / закрытия меню (индекс 3)*/
   z-index: 1;
 
   @media (min-width: $tablet-width) {
@@ -30,11 +30,26 @@
   position: absolute;
   width: 23px;
   height: 22px;
+  /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка открытия / закрытия меню (индекс 3)*/
+  z-index: 3;
+  background-color: transparent;
 
   // top: 10px;
   // right: 10px;
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -88,6 +103,7 @@
   top: -49px;
   right: 19px;
   // background-color: $white;
+  // z-index: 3;
 
   &::before {
     content: "";
@@ -98,8 +114,8 @@
     right: 0;
     background-color: $white;
     transform: rotate(45deg);
-    /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка закрытия меню (индекс 3)*/
-    z-index: 3;
+    /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка открытия / закрытия меню (индекс 3)*/
+    // z-index: 3;
   }
 
   &::after {
@@ -111,8 +127,8 @@
     right: 0;
     background-color: $white;
     transform: rotate(-45deg);
-    /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка закрытия меню (индекс 3)*/
-    z-index: 3;
+    /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка открытия / закрытия меню (индекс 3)*/
+    // z-index: 3;
   }
 
   @media (min-width: $tablet-width) {
@@ -123,40 +139,40 @@
 .navigation--opened .navigation-toggle-button:hover {
   // opacity: 0.6;
 
-  &::before {
-    opacity: 0.6;
-    background-color: rgba($white, 0.6);
-  }
+  // &::before {
+  //   opacity: 0.6;
+  //   background-color: rgba($white, 0.6);
+  // }
 
-  &::after {
-    opacity: 0.6;
-    background-color: rgba($white, 0.6);
-  }
+  // &::after {
+  //   opacity: 0.6;
+  //   background-color: rgba($white, 0.6);
+  // }
 }
 
 .navigation--opened .navigation-toggle-button:focus {
   // opacity: 0.6;
-  &::before {
-    background-color: rgba($white, 0.6);
-  }
+  // &::before {
+  //   background-color: rgba($white, 0.6);
+  // }
 
-  &::after {
-    opacity: 0.6;
-    background-color: rgba($white, 0.6);
-  }
+  // &::after {
+  //   opacity: 0.6;
+  //   background-color: rgba($white, 0.6);
+  // }
 }
 
 
 .navigation--opened .navigation-toggle-button:active {
   // opacity: 0.3;
-  &::before {
-    background-color: rgba($white, 0.3);
-  }
+  // &::before {
+  //   background-color: rgba($white, 0.3);
+  // }
 
-  &::after {
-    opacity: 0.3;
-    background-color: rgba($white, 0.3);
-  }
+  // &::after {
+  //   opacity: 0.3;
+  //   background-color: rgba($white, 0.3);
+  // }
 }
 
 .navigation--closed .navigation__list {
@@ -169,7 +185,7 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     width: 100%;
-    /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка закрытия меню (индекс 3)*/
+    /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка открытия / закрытия меню (индекс 3)*/
     z-index: 2;
     top: -65px;
   }

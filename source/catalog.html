@@ -19,7 +19,7 @@
 
     <header class="page-header page-header--secondary">
       <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип сайта." width="185" height="96">
+        <img class="page-header__logo-image" src="img/svg/logo.svg" alt="Логотип сайта." width="185" height="96">
       </a>
 
       <!-- <nav class="navigation navigation--closed navigation--nojs"> -->
@@ -80,7 +80,11 @@
             <div class="photo-content-container">
               <h3 class="photo-content-section__title">неродные просторы</h3>
               <p class="photo-content-section__author-name">Автор фото: Борис</p>
-              <button class="button photo-content-section__button" type="button">1350
+              <button class="button photo-content-section__button" type="button">
+                <svg width="23" height="21">
+                  <use href="img/svg/sprite.svg#like-icon"></use>
+                </svg>
+                1350
                 <span class="visually-hidden">Количество лайков.</span>
               </button>
             </div>
@@ -99,7 +103,11 @@
             <div class="photo-content-container">
               <h3 class="photo-content-section__title">местная растительность</h3>
               <p class="photo-content-section__author-name">Автор фото: Сергей</p>
-              <button class="button photo-content-section__button" type="button">143
+              <button class="button photo-content-section__button" type="button">
+                <svg width="23" height="21">
+                  <use href="img/svg/sprite.svg#like-icon"></use>
+                </svg>
+                143
                 <span class="visually-hidden">Количество лайков.</span>
               </button>
             </div>
@@ -118,7 +126,11 @@
             <div class="photo-content-container">
               <h3 class="photo-content-section__title">дорога на север</h3>
               <p class="photo-content-section__author-name">Автор фото: Петр</p>
-              <button class="button photo-content-section__button" type="button">96
+              <button class="button photo-content-section__button" type="button">
+                <svg width="23" height="21">
+                  <use href="img/svg/sprite.svg#like-icon"></use>
+                </svg>
+                96
                 <span class="visually-hidden">Количество лайков.</span>
               </button>
             </div>
@@ -138,7 +150,11 @@
             <div class="photo-content-container">
               <h3 class="photo-content-section__title">мост дьявола</h3>
               <p class="photo-content-section__author-name">Автор фото: Антон</p>
-              <button class="button photo-content-section__button" type="button">254
+              <button class="button photo-content-section__button" type="button">
+                <svg width="23" height="21">
+                  <use href="img/svg/sprite.svg#like-icon"></use>
+                </svg>
+                254
                 <span class="visually-hidden">Количество лайков.</span>
               </button>
             </div>
@@ -155,7 +171,8 @@
           <p class="video-content-section__text">смотрите видеопрезентацию и скорее за билетами, пока они не
             подорожали в очередной раз!</p>
         </header>
-        <video class="video-content-section__video" src="#" width="280" height="177" poster="1"></video>
+        <video class="video-content-section__video" src="#" width="280" height="177"
+          poster="img/catalog/video-desktop.jpg"></video>
 
       </section>
 
@@ -183,8 +200,11 @@
       </ul>
 
       <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="footer__text">разработано</p>
         <span class="visually-hidden">ссылка на Htmlacademy.ru.</span>
+        <p class="footer__text">разработано</p>
+        <svg class="footer__htmlacademy-icon" width="27" height="35">
+          <use href="img/svg/sprite.svg#logo-academy"></use>
+        </svg>
       </a>
     </footer>
   </div>
