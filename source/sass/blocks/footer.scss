@@ -26,6 +26,14 @@
   }
 }
 
+.footer--catalog {
+  padding: 3px 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 60px 29px 60px;
+  }
+}
+
 .footer__hashtag-link {
   @include fontsizes(21px, 26px, 700, $black);
   display: flex;

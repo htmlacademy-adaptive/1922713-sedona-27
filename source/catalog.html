@@ -18,12 +18,9 @@
   <div class="page-container">
 
     <header class="page-header page-header--secondary">
-      <svg class="page-header__image page-header__image--secondary" width="229" height="39" aria-hidden="true"
-        focusable="false">
-        <use href="img/svg/sprite.svg#sedona-text"></use>
-      </svg>
-      <!-- <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="img/svg/logo.svg" alt="Логотип сайта." width="185" height="96"> -->
+
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo-image" src="img/svg/logo.svg" alt="Логотип сайта." width="185" height="96">
       </a>
 
       <!-- <nav class="navigation navigation--closed navigation--nojs"> -->
@@ -52,17 +49,21 @@
       </nav>
 
       <div class="page-header-container page-header-container--secondary">
-        <img class="page-header__image page-header__image--secondary" src="img/form/sedona-text.svg"
-          alt="Надпись Sedona." width="229" height="39">
+        <svg class="page-header__image page-header__image--secondary" width="229" height="39" aria-hidden="true"
+          focusable="false">
+          <use href="img/svg/sprite.svg#sedona-text"></use>
+        </svg>
+        <!-- <img class="page-header__image page-header__image--secondary" src="img/form/sedona-text.svg"
+          alt="Надпись Sedona." width="229" height="39"> -->
       </div>
 
     </header>
 
     <main class="main">
 
-      <header class="main__header main__header--secondary main__header--catalog">
-        <h1 class="main__title main__title--secondary main__title--catalog">фото и видео</h1>
-        <p class="main__text">не можете решиться на путешествие<br> из-за курса? фотографии помогут
+      <header class="main__header main__header--catalog">
+        <h1 class="main__title main__title--catalog">фото и видео</h1>
+        <p class="main__text main__text--catalog">не можете решиться на путешествие<br> из-за курса? фотографии помогут
           вам<br> забыть о политике и экономике.</p>
       </header>
 
@@ -91,10 +92,12 @@
                 srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Закат." width="280" height="280">
             </picture>
             <div class="photo-content-container">
-              <h3 class="photo-content-section__title">неродные просторы</h3>
-              <p class="photo-content-section__author-name">Автор фото: Борис</p>
+              <div class="photo-content-text-container">
+                <h3 class="photo-content-section__title">неродные просторы</h3>
+                <p class="photo-content-section__author-name">Автор фото: Борис</p>
+              </div>
               <button class="button photo-content-section__button" type="button" aria-label="Поставить лайк">
-                <svg aria-hidden="true" focusable="false" width="23" height="21">
+                <svg class="photo-content-section__icon" aria-hidden="true" focusable="false" width="23" height="21">
                   <use href="img/svg/sprite.svg#like-icon"></use>
                 </svg>
                 1350
@@ -115,10 +118,12 @@
                 srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Цветущие кактусы." width="280" height="280">
             </picture>
             <div class="photo-content-container">
-              <h3 class="photo-content-section__title">местная растительность</h3>
-              <p class="photo-content-section__author-name">Автор фото: Сергей</p>
+              <div class="photo-content-text-container">
+                <h3 class="photo-content-section__title">местная растительность</h3>
+                <p class="photo-content-section__author-name">Автор фото: Сергей</p>
+              </div>
               <button class="button photo-content-section__button" type="button" aria-label="Поставить лайк">
-                <svg aria-hidden="true" focusable="false" width="23" height="21">
+                <svg class="photo-content-section__icon" aria-hidden="true" focusable="false" width="23" height="21">
                   <use href="img/svg/sprite.svg#like-icon"></use>
                 </svg>
                 143
@@ -139,10 +144,12 @@
                 srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Горная дорога." width="280" height="280">
             </picture>
             <div class="photo-content-container">
-              <h3 class="photo-content-section__title">дорога на север</h3>
-              <p class="photo-content-section__author-name">Автор фото: Петр</p>
+              <div class="photo-content-text-container">
+                <h3 class="photo-content-section__title">дорога на север</h3>
+                <p class="photo-content-section__author-name">Автор фото: Петр</p>
+              </div>
               <button class="button photo-content-section__button" type="button" aria-label="Поставить лайк">
-                <svg aria-hidden="true" focusable="false" width="23" height="21">
+                <svg class="photo-content-section__icon" aria-hidden="true" focusable="false" width="23" height="21">
                   <use href="img/svg/sprite.svg#like-icon"></use>
                 </svg>
                 96
@@ -164,10 +171,12 @@
                 width="280" height="280">
             </picture>
             <div class="photo-content-container">
-              <h3 class="photo-content-section__title">мост дьявола</h3>
-              <p class="photo-content-section__author-name">Автор фото: Антон</p>
+              <div class="photo-content-text-container">
+                <h3 class="photo-content-section__title">мост дьявола</h3>
+                <p class="photo-content-section__author-name">Автор фото: Антон</p>
+              </div>
               <button class="button photo-content-section__button" type="button" aria-label="Поставить лайк">
-                <svg aria-hidden="true" focusable="false" width="23" height="21">
+                <svg class="photo-content-section__icon" aria-hidden="true" focusable="false" width="23" height="21">
                   <use href="img/svg/sprite.svg#like-icon"></use>
                 </svg>
                 254
@@ -194,7 +203,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--catalog">
       <a class="footer__hashtag-link"
         href="https://www.yandex.ru/search/?lr=10754&offline_search=1&text=%23visitsedona&clid=2196598&from=chromesearch">#visitsedona</a>
       <ul class="footer__list">

@@ -1,5 +1,17 @@
 .video-content-section {
-  padding: 17px 0 0 0;
+  padding: 17px 0 7px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 0 52px 0;
+  }
+}
+
+.video-content-section__header {
+  padding: 0 0 13px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 64px 0;
+  }
 }
 
 .video-content-section__slogan {
@@ -11,6 +23,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-bottom: 32px;
   }
 }
 
@@ -48,6 +61,7 @@
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
+    object-fit: none;
   }
 
   @media (min-width: $desktop-width) {
