@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 17px 0 52px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 21px 0 96px 0;
+  }
 }
 
 .video-content-section__header {
@@ -11,6 +15,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 0 64px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 62px 0;
   }
 }
 

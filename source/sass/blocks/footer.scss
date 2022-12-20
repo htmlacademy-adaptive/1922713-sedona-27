@@ -32,6 +32,10 @@
   @media (min-width: $tablet-width) {
     padding: 24px 60px 29px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 122px 29px 119px;
+  }
 }
 
 .footer__hashtag-link {
