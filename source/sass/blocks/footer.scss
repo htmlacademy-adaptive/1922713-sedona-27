@@ -16,6 +16,16 @@
   }
 }
 
+.footer--form {
+  @media (min-width: $tablet-width) {
+    padding: 36px 61px 36px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 121px 30px 120px;
+  }
+}
+
 .footer__hashtag-link {
   @include fontsizes(21px, 26px, 700, $black);
   display: flex;

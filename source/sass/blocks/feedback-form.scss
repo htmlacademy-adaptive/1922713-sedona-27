@@ -193,7 +193,7 @@
       content: "";
       position: absolute;
       width: 100%;
-      bottom: 0;
+      bottom: 2px;
       height: 1px;
       background-color: #e5e5e5;
     }
@@ -272,7 +272,7 @@
       content: "";
       position: absolute;
       width: 100%;
-      bottom: 0;
+      bottom: 2px;
       height: 1px;
       background-color: #e5e5e5;
     }
@@ -346,8 +346,8 @@
       content: "";
       position: absolute;
       width: 123px;
-      top: -40px;
-      left: 0;
+      top: -42px;
+      left: -8px;
       height: 1px;
       background-color: $darkgray;
     }
@@ -356,8 +356,8 @@
       content: "";
       position: absolute;
       width: 123px;
-      top: -40px;
-      right: 0;
+      top: -42px;
+      right: -8px;
       height: 1px;
       background-color: $darkgray;
     }
@@ -392,11 +392,13 @@
 .feedback-form__group--size-xxl-attractions {
   @media (min-width: $tablet-width) {
     &::before {
-      top: -27px;
+      top: -28px;
+      left: 0;
     }
 
     &::after {
-      top: -27px;
+      top: -28px;
+      right: 0;
     }
   }
 
@@ -407,6 +409,7 @@
 
     &::after {
       top: -58px;
+      right: 69px;
     }
   }
 }
@@ -414,18 +417,30 @@
 .feedback-form__group--size-xxl-emotions {
   @media (min-width: $tablet-width) {
     &::before {
-      top: -42px;
+      // top: -41px;
+      left: 0;
     }
 
     &::after {
-      top: -42px;
+      // top: -41px;
+      right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: -41px;
+    }
+
+    &::after {
+      top: -41px;
     }
   }
 }
 
 // Группа для textarea
 .feedback-form__group--emotions {
-  padding: 0 0 44px 0;
+  padding: 0 0 56px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 48px 0;
@@ -443,7 +458,7 @@
   display: block;
   width: 279px;
   margin: 0 auto;
-  padding: 16px 16px 14px 16px;
+  padding: 13px 16px 5px 16px;
   background-color: $lightgray;
   resize: none;
   border: none;
@@ -455,7 +470,7 @@
   }
 
   &:focus {
-    background-color: #e5e5e5;
+    background-color: $white;
   }
 
   &:active {
@@ -464,10 +479,12 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
+    padding: 15px 16px 14px 16px;
   }
 
   @media (min-width: $desktop-width) {
     width: 768px;
+    padding: 15px 16px 15px 16px;
   }
 }
 
