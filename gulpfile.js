@@ -24,8 +24,7 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    // .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -60,10 +59,10 @@ const copyImages = () => {
 // WebP
 
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{jpg.png}')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp: {}
-          }))
+    }))
     .pipe(gulp.dest('build/img'))
 }
 
@@ -76,11 +75,11 @@ const svg = () => {
 }
 
 const sprite = () => {
-  return gulp.src(['source/img/svg/*.svg', '!source/img/svg/sprite.svg'])
+  return gulp.src('source/img/svg/*.svg')
     .pipe(svgo())
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img/svg'))
 }
 
 // Copy
@@ -100,7 +99,7 @@ const copy = (done) => {
 // Clean
 
 const clean = () => {
-  return del('build')
+  return del('build');
 }
 
 // Server
