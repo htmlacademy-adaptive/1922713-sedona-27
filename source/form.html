@@ -18,20 +18,16 @@
 <body class="page__body">
   <div class="page-container">
     <header class="page-header">
-
       <a class="page-header__logo-link" href="index.html">
         <img class="page-header__logo-image" src="img/index/logo.svg" alt="Логотип сайта." width="185" height="96">
       </a>
-
       <!-- <nav class="navigation navigation--closed navigation--nojs"> -->
       <!-- <nav class="navigation navigation--opened navigation--nojs"> -->
       <!-- <nav class="navigation navigation--opened"> -->
       <nav class="navigation navigation--closed">
-
         <button class="button navigation-toggle-button" type="button">
           <span class="visually-hidden">открыть/закрыть меню.</span>
         </button>
-
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">главная</a>
@@ -47,61 +43,45 @@
           </li>
         </ul>
       </nav>
-
       <div class="page-header-container page-header-container--secondary">
-        <!-- <svg class="page-header__image page-header__image--secondary" width="229" height="39" aria-hidden="true"
-          focusable="false">
-          <use href="img/svg/sprite.svg#sedona-text"></use>
-        </svg> -->
+
         <img class="page-header__image page-header__image--secondary" src="img/form/sedona-text.svg"
           alt="Надпись Sedona." width="229" height="39">
       </div>
-
     </header>
-
-
     <main class="main">
-
       <header class="main__header main__header--form">
         <h1 class="main__title main__title--form">оставьте свой отзыв</h1>
         <p class="main__text">помогите нашим отелям стать лучше! оставьте отзыв о них, а
           также о посещенных вами достопримечательностях</p>
       </header>
-
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
-        <!-- <h2 class="visually-hidden">Форма обратной связи</h2> -->
         <fieldset class="feedback-form__group feedback-form__group--person-information">
           <legend class="feedback-form__title">представьтесь:</legend>
-          <label class="feedback-form__label feedback-form__label--person-information" for="name" required>имя*:</label>
+          <label class="feedback-form__label feedback-form__label--person-information" for="name">имя*:</label>
           <input class="feedback-form__input feedback-form__input--person-information" type="text" id="name" name="name"
-            value="Пётр">
-          <label class="feedback-form__label feedback-form__label--person-information" for="surname"
-            required>фамилия*:</label>
+            value="Пётр" required>
+          <label class="feedback-form__label feedback-form__label--person-information" for="surname">фамилия*:</label>
           <input class="feedback-form__input feedback-form__input--person-information" type="text" id="surname"
-            name="surname" value="Пустота">
+            name="surname" value="Пустота" required>
           <label class="feedback-form__label feedback-form__label--person-information"
             for="patronymic">отчество:</label>
           <input class="feedback-form__input feedback-form__input--person-information" type="text" id="patronymic"
             name="patronymic" value="Викторович">
         </fieldset>
-
-        <!-- <h2 class="visually-hidden">Укажите телефон и электронную почту</h2> -->
         <fieldset class="feedback-form__group feedback-form__group--person-information feedback-form__group--contacts">
           <legend class="feedback-form__title">контактная информация:</legend>
-          <label class="feedback-form__label feedback-form__label--person-information" for="telephone"
-            required>Контактный
+          <label class="feedback-form__label feedback-form__label--person-information" for="telephone">Контактный
             телефон*:</label>
           <input
             class="feedback-form__input feedback-form__input--person-information feedback-form__input--contacts feedback-form__input--contacts-phone"
-            type="tel" id="telephone" name="telephone" placeholder="Введите телефон">
-          <label class="feedback-form__label feedback-form__label--person-information" for="email" required>Электронная
+            type="tel" id="telephone" name="telephone" placeholder="Введите телефон" required>
+          <label class="feedback-form__label feedback-form__label--person-information" for="email">Электронная
             почта*:</label>
           <input
             class="feedback-form__input feedback-form__input--person-information feedback-form__input--contacts feedback-form__input--contacts-email"
-            type="email" id="email" name="email" placeholder="Введите e-mail">
+            type="email" id="email" name="email" placeholder="Введите e-mail" required>
         </fieldset>
-
-        <!-- <h2 class="visually-hidden">Укажите Ваш общее впечатление</h2> -->
         <fieldset class="feedback-form__group feedback-form__group--size-xxl feedback-form__group--impression">
           <legend class="feedback-form__title feedback-form__title--impression">ваше общее впечатление:</legend>
           <label class="feedback-form__label feedback-form__label--impression" for="good">
@@ -122,8 +102,6 @@
             <span class="feedback-form__control-label">Затрудняюсь ответить</span>
           </label>
         </fieldset>
-
-        <!-- <h2 class="visually-hidden">Укажите посещенные достопримечательности:</h2> -->
         <fieldset
           class="feedback-form__group feedback-form__group--size-xxl feedback-form__group--attractions feedback-form__group--size-xxl-attractions">
           <legend class="feedback-form__title feedback-form__title--attractions">посещенные достопримечательности:
@@ -153,29 +131,19 @@
             <span class="feedback-form__control-label">Красные скалы</span>
           </label>
         </fieldset>
-
-        <!-- <h2 class="visually-hidden">Расскажите нам о своих эмоциях:</h2> -->
         <fieldset
           class="feedback-form__group feedback-form__group--size-xxl feedback-form__group--size-xxl-emotions feedback-form__group--emotions">
           <legend class="feedback-form__title feedback-form__title--emotions">опишите свои эмоции:</legend>
-
           <label class="visually-hidden" for="emotions">Поле для написания отзыва</label>
-          <!-- <input class="feedback-form__input feedback-form__input--emotions" type="text" id="emotions" name="emotions"
-          placeholder="Опишите подробно все свои восторги"> -->
-
           <textarea class="feedback-form__textarea" id="emotions" name="emotions" rows="5" cols="33"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-
         <div class="feedback-form-container">
           <button class="button feedback-form__button" type="submit">отправить отзыв</button>
           <p class="feedback-form__text">* — обязательные поля</p>
         </div>
-
       </form>
-
     </main>
-
     <footer class="footer footer--form">
       <a class="footer__hashtag-link"
         href="https://www.yandex.ru/search/?lr=10754&offline_search=1&text=%23visitsedona&clid=2196598&from=chromesearch">#visitsedona</a>
@@ -196,7 +164,6 @@
           </a>
         </li>
       </ul>
-
       <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive"
         aria-label="Сайт HTML Academy">
         <p class="footer__text">разработано</p>
@@ -205,7 +172,6 @@
         </svg>
       </a>
     </footer>
-
     <!-- <div class="modal-window-container"> -->
     <div class="modal-window-container modal-window-container--close">
       <div class="modal-window modal-window--failure">
@@ -216,7 +182,6 @@
         <button class="button modal-window__button modal-window__button--failure" type="button">ок</button>
       </div>
     </div>
-
     <!-- <div class="modal-window-container"> -->
     <div class="modal-window-container modal-window-container--close">
       <div class="modal-window modal-window--valid-success">
@@ -228,7 +193,6 @@
         </div>
       </div>
     </div>
-
   </div>
   <script src="js/script.js"></script>
 </body>
