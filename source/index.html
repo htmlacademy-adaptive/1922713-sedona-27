@@ -10,8 +10,9 @@
     content="Официальный сайт города Седона. Здесь Вы можете найти всю информацию о нашем городе и о наличии свободных мест в гостиницах">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-  <link rel="icon" type="image/svg+xml" href="favicon152.svg">
+  <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -48,7 +49,10 @@
       </nav>
 
       <div class="page-header-container">
-        <img class="page-header__image" src="img/index/welcome-text.svg"
+        <!-- <svg class="page-header__image" width="282" height="214" aria-hidden="true" focusable="false">
+          <use href="img/svg/sprite.svg#welcome-text"></use>
+        </svg> -->
+        <img class="page-header__image" src="img/svg/welcome-text.svg"
           alt="Приветственная надпись Welcome to the gorgeous Sedona! Because the Grand Canyon Sucks! на фоне гор."
           width="282" height="214">
       </div>
@@ -119,6 +123,12 @@
               </p>
             </div>
             <picture>
+              <source type="image/webp" media="(min-width:1200px)"
+                srcset="img/index/bridge-desktop.webp 1x, img/index/bridge-desktop@2x.webp 2x" width="800" height="256">
+              <source type="image/webp" media="(min-width:768px)"
+                srcset="img/index/bridge-tablet.webp 1x, img/index/bridge-tablet@2x.webp 2x" width="512" height="256">
+              <source type="image/webp" srcset="img/index/bridge-mobile.webp 1x, img/index/bridge-mobile@2x.webp 2x"
+                width="320" height="260">
               <source media="(min-width:1200px)"
                 srcset="img/index/bridge-desktop.jpg 1x, img/index/bridge-desktop@2x.jpg 2x" width="800" height="256">
               <source media="(min-width:768px)"
