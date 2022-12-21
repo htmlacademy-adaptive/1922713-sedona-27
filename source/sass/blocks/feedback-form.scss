@@ -561,8 +561,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 648px;
     justify-content: space-between;
+    width: 648px;
   }
 
   @media (min-width: $desktop-width) {

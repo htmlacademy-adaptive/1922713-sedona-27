@@ -140,14 +140,6 @@
   border-radius: 15px;
   box-sizing: border-box;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 25px;
-  }
-
-  @media (min-width: $desktop-width) {
-    color: $white;
-  }
-
   &:hover {
     // box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 10px 2px $blue;
@@ -167,13 +159,42 @@
     // box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0 0 5px 2px $blue inset;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+
+    &:hover {
+      // box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px 2px $white;
+    }
+
+    &:focus {
+      // box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px 2px $white;
+    }
+
+    &:active {
+      color: rgba($white, 0.6);
+      // box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2) inset;
+      box-shadow: 0 0 5px 2px $white inset;
+    }
+  }
 }
 
 .photo-content-section__icon {
   margin-bottom: 10px;
   padding-right: 14px;
+  opacity: 0.3;
 
   @media (min-width: $tablet-width) {
     padding-right: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
   }
 }
