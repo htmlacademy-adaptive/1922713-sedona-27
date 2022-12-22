@@ -32,7 +32,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-    // .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
 }
 
@@ -46,7 +46,7 @@ const scripts = () => {
 
 // Images
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*.png'])
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
 }
@@ -133,7 +133,7 @@ const watcher = () => {
 
 // Build
 
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
@@ -153,6 +153,7 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
+  // optimizeImages,
   gulp.parallel(
     styles,
     html,
