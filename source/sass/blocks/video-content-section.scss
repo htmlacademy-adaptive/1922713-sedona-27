@@ -101,9 +101,6 @@
     left: 0;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.7);
-    transform: translateX(250px);
-    background-image: url("../../img/svg/triangle-video.svg");
-    background-repeat: no-repeat;
     clip-path: polygon(0 100%, 100% 50%, 0 0);
   }
 }
