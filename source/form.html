@@ -8,20 +8,25 @@
   <meta name="keywords" content="Седона, город, туризм">
   <meta name="description"
     content="Официальный сайт города Седона. Здесь Вы можете найти всю информацию о нашем городе и о наличии свободных мест в гостиницах">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style.min.css" rel="preload" as="style" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="js/script.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="img/index/logo.svg" as="image" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <div class="page-container">
     <header class="page-header">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="img/index/logo.svg" alt="Логотип сайта." width="185" height="96"
-          rel="preload" as="image" crossorigin="anonymous">
+      <a class="page-header__logo-link" href="#" aria-current="page">
+        <img class="page-header__logo-image" src="img/index/logo.svg" alt="Логотип сайта." width="185" height="96">
       </a>
       <!-- <nav class="navigation navigation--closed navigation--nojs"> -->
       <!-- <nav class="navigation navigation--opened navigation--nojs"> -->
@@ -47,7 +52,7 @@
       </nav>
       <div class="page-header-container page-header-container--secondary">
         <img class="page-header__image page-header__image--secondary" src="img/form/sedona-text.svg"
-          alt="Надпись Sedona." width="229" height="39" rel="preload" as="image" crossorigin="anonymous">
+          alt="Надпись Sedona." width="229" height="39">
       </div>
     </header>
     <main class="main">
@@ -195,7 +200,7 @@
       </div>
     </div>
   </div>
-  <script src="js/script.js" rel="preload" as="script" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
