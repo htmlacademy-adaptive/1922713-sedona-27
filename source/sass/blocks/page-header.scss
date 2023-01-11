@@ -205,15 +205,18 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    // display: flex;
     // flex-direction: column;
-    flex-direction: row;
-    flex-wrap: wrap;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 153px);
     width: 768px;
     background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(5, 240px);
     width: 1200px;
   }
 }
@@ -226,9 +229,27 @@
   }
 }
 
-.navigation__item:nth-of-type(2) {
+.navigation__item:nth-of-type(4n + 1) {
   @media (min-width: $tablet-width) {
-    margin-right: auto;
+    grid-column: 1/2;
+  }
+}
+
+.navigation__item:nth-of-type(4n + 2) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+  }
+}
+
+.navigation__item:nth-of-type(4n + 3) {
+  @media (min-width: $tablet-width) {
+    grid-column: 4/5;
+  }
+}
+
+.navigation__item:nth-of-type(4n + 4) {
+  @media (min-width: $tablet-width) {
+    grid-column: 5/6;
   }
 }
 
@@ -244,6 +265,7 @@
   justify-content: center;
   padding: 19px 1px 17px 0;
   text-decoration: none;
+  box-sizing: border-box;
 
   @media (max-width: $mobile-width-only) {
     &:hover {
@@ -262,7 +284,7 @@
 
   @media (min-width: $tablet-width) {
     width: 153px;
-    padding: 18px 0 17px 0;
+    padding: 18px 5px 17px 5px;
     font-size: 14px;
     line-height: 21px;
     color: $black;
