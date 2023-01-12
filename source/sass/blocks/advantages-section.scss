@@ -369,6 +369,7 @@
 
 .advantages-section__image {
   display: block;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     width: 512px;
