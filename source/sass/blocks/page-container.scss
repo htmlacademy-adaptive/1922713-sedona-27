@@ -1,16 +1,3 @@
-.page__body {
-  // width: 320px;
-  // margin: 0 auto;
-  // padding: 0;
-  width: 100%;
-  margin: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
-
-  @media (min-width: $desktop-width) {
-    background-color: $lightgray;
-  }
-}
-
 .page-container {
   width: 320px;
   margin: 0 auto;

@@ -1,6 +1,39 @@
+.map-section {
+  background-color: linear-gradient(to right, #81b3d2 14%, #ffffff);
+  background-image: url("../../img/map/map-mobile.webp");
+  background-repeat: no-repeat;
+  background-size: 320px 350px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/map/map-mobile@2x.webp");
+    background-size: 640px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/map/map-tablet.webp");
+    background-size: 768px 350px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/map/map-tablet@2x.webp");
+      background-size: 1536px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/map/map-desktop.webp");
+    background-size: 1200px 350px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/map/map-desktop@2x.webp");
+      background-size: 2400px auto;
+    }
+  }
+}
+
 .map-section__map {
   display: block;
   border: none;
+
 
   @media (min-width: $tablet-width) {
     width: 768px;

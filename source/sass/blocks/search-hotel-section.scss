@@ -24,7 +24,7 @@
 }
 
 .search-hotel-section__text {
-  @include fontsizes(14px, 21px, 700, $lightblack);
+  @include fontsizes(14px, 21px, 400, $lightblack);
   text-align: center;
   text-transform: uppercase;
   margin: 0;
