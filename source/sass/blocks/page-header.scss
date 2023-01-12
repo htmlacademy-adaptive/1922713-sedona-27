@@ -247,6 +247,7 @@
   }
 }
 
+
 .navigation__item:nth-of-type(4n + 4) {
   @media (min-width: $tablet-width) {
     grid-column: 5/6;
