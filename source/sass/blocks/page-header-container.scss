@@ -1,8 +1,7 @@
 .page-header-container {
   width: 100%;
   height: 389px;
-
-  background-image: linear-gradient(to right, #81b3d2 14%, #ffffff);
+  background-color: $blue;
   background-image:
     url("../../img/header/divider-main-desktop.svg"),
     url("../../img/header/main-background-mobile.webp");

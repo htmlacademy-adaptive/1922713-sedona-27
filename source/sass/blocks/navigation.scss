@@ -6,7 +6,8 @@
   position: absolute;
   width: 23px;
   height: 22px;
-  /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка открытия / закрытия меню (индекс 3)*/
+  /*задний фон в хедере (индекс -1), открытое меню-навигация (индекс 2)
+    кнопка открытия / закрытия меню (индекс 3)*/
   z-index: 3;
   background-color: transparent;
 
@@ -27,148 +28,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.navigation--closed .navigation__toggle-button {
-  content: "";
-  // position: absolute;
-  // width: 23px;
-  // height: 4px;
-  top: -39px;
-  right: 20px;
-  background-color: $blue;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 4px;
-    top: 5px;
-    right: 0;
-    background-color: $white;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 4px;
-    top: 14px;
-    right: 0;
-    background-color: $white;
-  }
-}
-
-.navigation--closed .navigation__toggle-button:hover {
-  background-color: rgba($blue, 0.6);
-
-  &:focus {
-    background-color: rgba($blue, 0.6);
-  }
-
-  &:active {
-    background-color: rgba($blue, 0.3);
-  }
-}
-
-.navigation--opened .navigation__toggle-button {
-  content: "";
-  // position: absolute;
-  // width: 23px;
-  // height: 4px;
-  top: -49px;
-  right: 19px;
-  // background-color: $white;
-  // z-index: 3;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 4px;
-    top: 10px;
-    right: 0;
-    background-color: $white;
-    transform: rotate(45deg);
-    /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка открытия / закрытия меню (индекс 3)*/
-    // z-index: 3;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 4px;
-    top: 10px;
-    right: 0;
-    background-color: $white;
-    transform: rotate(-45deg);
-    /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка открытия / закрытия меню (индекс 3)*/
-    // z-index: 3;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.navigation--opened .navigation__toggle-button:hover {
-  // opacity: 0.6;
-
-  // &::before {
-  //   opacity: 0.6;
-  //   background-color: rgba($white, 0.6);
-  // }
-
-  // &::after {
-  //   opacity: 0.6;
-  //   background-color: rgba($white, 0.6);
-  // }
-}
-
-.navigation--opened .navigation__toggle-button:focus {
-  // opacity: 0.6;
-  // &::before {
-  //   background-color: rgba($white, 0.6);
-  // }
-
-  // &::after {
-  //   opacity: 0.6;
-  //   background-color: rgba($white, 0.6);
-  // }
-}
-
-
-.navigation--opened .navigation__toggle-button:active {
-  // opacity: 0.3;
-  // &::before {
-  //   background-color: rgba($white, 0.3);
-  // }
-
-  // &::after {
-  //   opacity: 0.3;
-  //   background-color: rgba($white, 0.3);
-  // }
-}
-
-.navigation--closed .navigation__list {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-}
-
-.navigation--opened .navigation__list {
-  @media (max-width: $mobile-width-only) {
-    position: absolute;
-    width: 100%;
-    /*логотип (индекс 1), открытое меню-навигация (индекс 2), кнопка открытия / закрытия меню (индекс 3)*/
-    z-index: 2;
-    top: -65px;
-  }
-}
-
-.navigation--nojs .navigation__toggle-button {
-  display: none;
 }
 
 .navigation__list {
@@ -239,7 +98,7 @@
   @include fontsizes(18px, 26px, 700, $white);
   display: flex;
   justify-content: center;
-  padding: 19px 1px 17px 0;
+  padding: 19px 0 11px 0;
   text-decoration: none;
   box-sizing: border-box;
 
@@ -286,5 +145,152 @@
 .navigation__link--current {
   @media (min-width: $tablet-width) {
     color: $brown;
+  }
+}
+
+.navigation--closed .navigation__toggle-button {
+  content: "";
+  // position: absolute;
+  // width: 23px;
+  // height: 4px;
+  top: -39px;
+  right: 20px;
+  background-color: $blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 5px;
+    right: 0;
+    background-color: $white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 14px;
+    right: 0;
+    background-color: $white;
+  }
+}
+
+.navigation--closed .navigation__toggle-button:hover {
+  background-color: rgba($blue, 0.6);
+
+  &:focus {
+    background-color: rgba($blue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($blue, 0.3);
+  }
+}
+
+.navigation--closed .navigation__list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.navigation--nojs .navigation__toggle-button {
+  display: none;
+}
+
+.navigation--nojs .navigation__list {
+  @media (max-width: $mobile-width-only) {
+    position: static;
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+.navigation--opened .navigation__toggle-button {
+  content: "";
+  // position: absolute;
+  // width: 23px;
+  // height: 4px;
+  top: -49px;
+  right: 19px;
+  // background-color: $white;
+  // z-index: 3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 19px;
+    right: 0;
+    background-color: $white;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 19px;
+    right: 0;
+    background-color: $white;
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--opened .navigation__toggle-button:hover {
+  // opacity: 0.6;
+
+  // &::before {
+  //   opacity: 0.6;
+  //   background-color: rgba($white, 0.6);
+  // }
+
+  // &::after {
+  //   opacity: 0.6;
+  //   background-color: rgba($white, 0.6);
+  // }
+}
+
+.navigation--opened .navigation__toggle-button:focus {
+  // opacity: 0.6;
+  // &::before {
+  //   background-color: rgba($white, 0.6);
+  // }
+
+  // &::after {
+  //   opacity: 0.6;
+  //   background-color: rgba($white, 0.6);
+  // }
+}
+
+
+.navigation--opened .navigation__toggle-button:active {
+  // opacity: 0.3;
+  // &::before {
+  //   background-color: rgba($white, 0.3);
+  // }
+
+  // &::after {
+  //   opacity: 0.3;
+  //   background-color: rgba($white, 0.3);
+  // }
+}
+
+.navigation--opened .navigation__list {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    width: 100%;
+    /*задний фон в хедере (индекс -1), открытое меню-навигация (индекс 2)
+    кнопка открытия / закрытия меню (индекс 3)*/
+    z-index: 2;
+    top: -57px;
   }
 }

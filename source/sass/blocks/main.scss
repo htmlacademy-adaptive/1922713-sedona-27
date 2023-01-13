@@ -1,5 +1,5 @@
 .main__header {
-  padding: 34px 18px 16px 18px;
+  padding: 34px 0 16px 0;
 
   @media (min-width: $tablet-width) {
     width: 564px;
@@ -42,6 +42,7 @@
   @include fontsizes(18px, 26px, 700, $black);
   margin: 0;
   margin-bottom: 35px;
+  padding: 0 24px;
   text-transform: uppercase;
   text-align: center;
 
@@ -49,9 +50,9 @@
     font-size: 21px;
     margin-bottom: 25px;
 
-    br {
-      display: none;
-    }
+    // br {
+    //   display: none;
+    // }
   }
 }
 
@@ -84,15 +85,16 @@
 .main__text {
   @include fontsizes(14px, 21px, 400, $lightblack);
   margin: 0;
+  padding: 0 9px;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     line-height: 24px;
 
-    br {
-      display: none;
-    }
+    // br {
+    //   display: none;
+    // }
   }
 }
 
