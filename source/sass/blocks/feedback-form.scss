@@ -24,7 +24,6 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
-    // grid-template-columns: 480px 480px;
     grid-template-columns: 493px 466px;
     padding: 29px 0 49px 0;
   }
@@ -57,7 +56,7 @@
 
 .feedback-form__label {
   @include fontsizes(14px, 21px, 400, $lightblack);
-  // margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .feedback-form__input {
@@ -93,7 +92,6 @@
       content: "";
       position: absolute;
       width: 100%;
-      // bottom: 25px;
       bottom: 0;
       height: 1px;
       background-color: #e5e5e5;
@@ -128,7 +126,6 @@
   @media (min-width: $desktop-width) {
     width: 430px;
     margin-bottom: 16px;
-    // padding: 17px 16px 16px 16px;
   }
 }
 
@@ -153,7 +150,6 @@
   @media (min-width: $desktop-width) {
     &::before {
       bottom: 26px;
-      // left: 13px;
     }
   }
 }
@@ -208,8 +204,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    // display: flex;
-    // flex-wrap: wrap;
     display: grid;
     grid-template-columns: 36px 280px 280px 36px;
     width: 560px;
@@ -384,19 +378,6 @@
       right: 0;
     }
   }
-
-  // @media (min-width: $desktop-width) {
-  //   width: 960px;
-  //   grid-template-columns: 480px 480px;
-
-  //   &::before {
-  //     width: 280px;
-  //   }
-
-  //   &::after {
-  //     width: 280px;
-  //   }
-  // }
 }
 
 .feedback-form__group--size-xxl-attractions {
@@ -427,12 +408,10 @@
 .feedback-form__group--size-xxl-emotions {
   @media (min-width: $tablet-width) {
     &::before {
-      // top: -41px;
       left: 0;
     }
 
     &::after {
-      // top: -41px;
       right: 0;
     }
   }
@@ -510,13 +489,7 @@
   height: 46px;
   top: -11px;
   margin-left: -61px;
-  // left: 20px;
   background-color: $lightgray;
-
-  // @media (min-width: $tablet-width) {
-  //   left: -8px;
-  //   margin-left: -61px;
-  // }
 
   &:hover {
     background-color: #e5e5e5;
@@ -592,9 +565,7 @@
   margin-bottom: 2px;
   padding: 16px 16px 16px 16px;
   text-transform: uppercase;
-  // letter-spacing: -2px;
   background-color: $blue;
-  // white-space: nowrap;
 
   &:hover {
     background-color: $darkblue;
@@ -608,12 +579,10 @@
   @media (min-width: $tablet-width) {
     width: 324px;
     margin: 0;
-    // padding: 16px 16px 16px 16px;
   }
 
   @media (min-width: $desktop-width) {
     width: 384px;
-    // padding: 16px 101px 16px 101px;
   }
 }
 

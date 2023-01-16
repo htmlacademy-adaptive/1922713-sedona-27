@@ -16,8 +16,6 @@
   @media (min-width: $tablet-width) {
     width: 400px;
     padding: 0;
-    // padding: 45px 60px 35px 60px;
-    // padding: 20px 0 20px;
   }
 }
 
@@ -79,10 +77,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 51px;
     padding: 0 110px 0 110px;
-
-    // br {
-    //   display: none;
-    // }
   }
 
   @media (min-width: $desktop-width) {
@@ -128,7 +122,6 @@
     font-size: 21px;
     width: 458px;
     padding: 18px 18px 14px 18px;
-    // letter-spacing: 0;
   }
 }
 
