@@ -6,8 +6,11 @@
 @import "fonts.scss";
 @import "blocks/button.scss";
 // Index, header, footer
-@import "blocks/body.scss";
+@import "blocks/page.scss";
+@import "blocks/page-container.scss";
 @import "blocks/page-header.scss";
+@import "blocks/page-header-container.scss";
+@import "blocks/navigation.scss";
 @import "blocks/advantages-section.scss";
 @import "blocks/search-hotel-section.scss";
 @import "blocks/footer.scss";
@@ -16,6 +19,10 @@
 // Form
 @import "blocks/feedback-form.scss";
 @import "blocks/modal-window.scss";
+@import "blocks/modal-window-container.scss";
 // Catalog
 @import "blocks/photo-content-section.scss";
+@import "blocks/photo-content-container.scss";
+@import "blocks/photo-content-text-container.scss";
 @import "blocks/video-content-section.scss";
+@import "blocks/video-content-section-container.scss";

@@ -1,5 +1,5 @@
 .main__header {
-  padding: 34px 18px 16px 18px;
+  padding: 34px 0 16px 0;
 
   @media (min-width: $tablet-width) {
     width: 564px;
@@ -13,21 +13,21 @@
 }
 
 .main__header--form {
-  padding: 37px 18px 27px 18px;
+  padding: 37px 0 27px 0;
 
   @media (min-width: $tablet-width) {
-    width: 435px;
+    width: 453px;
     padding: 64px 0 50px 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 435px;
-    padding: 116px 0 11px 0;
+    width: 453px;
+    padding: 114px 0 13px 0;
   }
 }
 
 .main__header--catalog {
-  padding: 38px 18px 38px 18px;
+  padding: 38px 14px 38px 14px;
 
   @media (min-width: $tablet-width) {
     padding: 66px 0 54px 0;
@@ -42,6 +42,7 @@
   @include fontsizes(18px, 26px, 700, $black);
   margin: 0;
   margin-bottom: 35px;
+  padding: 0 24px;
   text-transform: uppercase;
   text-align: center;
 
@@ -49,9 +50,9 @@
     font-size: 21px;
     margin-bottom: 25px;
 
-    br {
-      display: none;
-    }
+    // br {
+    //   display: none;
+    // }
   }
 }
 
@@ -84,15 +85,16 @@
 .main__text {
   @include fontsizes(14px, 21px, 400, $lightblack);
   margin: 0;
+  padding: 0 9px;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     line-height: 24px;
 
-    br {
-      display: none;
-    }
+    // br {
+    //   display: none;
+    // }
   }
 }
 
@@ -100,9 +102,5 @@
   @media (min-width: $tablet-width) {
     line-height: 24px;
     padding: 0 59px;
-
-    br {
-      display: none;
-    }
   }
 }

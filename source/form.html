@@ -28,11 +28,8 @@
       <a class="page-header__logo-link" href="index.html">
         <img class="page-header__logo-image" src="img/index/logo.svg" alt="Логотип сайта." width="185" height="96">
       </a>
-      <!-- <nav class="navigation navigation--closed navigation--nojs"> -->
-      <!-- <nav class="navigation navigation--opened navigation--nojs"> -->
-      <!-- <nav class="navigation navigation--opened"> -->
-      <nav class="navigation navigation--closed">
-        <button class="button navigation-toggle-button" type="button">
+      <nav class="navigation navigation--closed navigation--nojs">
+        <button class="button navigation__toggle-button" type="button">
           <span class="visually-hidden">открыть/закрыть меню.</span>
         </button>
         <ul class="navigation__list">
@@ -91,19 +88,20 @@
         <fieldset class="feedback-form__group feedback-form__group--size-xxl feedback-form__group--impression">
           <legend class="feedback-form__title feedback-form__title--impression">ваше общее впечатление:</legend>
           <label class="feedback-form__label feedback-form__label--impression" for="good">
-            <input class="feedback-form__input visually-hidden" type="radio" id="good" name="impression" value="good"
-              checked>
+            <input class="feedback-form__input feedback-form__input--radio visually-hidden" type="radio" id="good"
+              name="impression" value="good" checked>
             <span class="feedback-form__control-mark feedback-form__control-mark--radio"></span>
             <span class="feedback-form__control-label">Скорее положительное</span>
           </label>
           <label class="feedback-form__label feedback-form__label--impression" for="bad">
-            <input class="feedback-form__input visually-hidden" type="radio" id="bad" name="impression" value="bad">
+            <input class="feedback-form__input feedback-form__input--radio visually-hidden" type="radio" id="bad"
+              name="impression" value="bad">
             <span class="feedback-form__control-mark feedback-form__control-mark--radio"></span>
             <span class="feedback-form__control-label">Скорее отрицательное</span>
           </label>
           <label class="feedback-form__label feedback-form__label--impression" for="no-answer">
-            <input class="feedback-form__input visually-hidden" type="radio" id="no-answer" name="impression"
-              value="no-answer">
+            <input class="feedback-form__input feedback-form__input--radio visually-hidden" type="radio" id="no-answer"
+              name="impression" value="no-answer">
             <span class="feedback-form__control-mark feedback-form__control-mark--radio"></span>
             <span class="feedback-form__control-label">Затрудняюсь ответить</span>
           </label>
@@ -113,26 +111,26 @@
           <legend class="feedback-form__title feedback-form__title--attractions">посещенные достопримечательности:
           </legend>
           <label class="feedback-form__label feedback-form__label--attractions" for="devils-bridge">
-            <input class="feedback-form__input visually-hidden" type="checkbox" id="devils-bridge" name="attractions"
-              value="devils-bridge" checked>
+            <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" type="checkbox"
+              id="devils-bridge" name="attractions" value="devils-bridge" checked>
             <span class="feedback-form__control-mark feedback-form__control-mark--checkbox"></span>
             <span class="feedback-form__control-label">Мост Дьявола</span>
           </label>
           <label class="feedback-form__label feedback-form__label--attractions" for="the-bell-mountain">
-            <input class="feedback-form__input visually-hidden" type="checkbox" id="the-bell-mountain"
-              name="attractions" value="the-bell-mountain" checked>
+            <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" type="checkbox"
+              id="the-bell-mountain" name="attractions" value="the-bell-mountain" checked>
             <span class="feedback-form__control-mark feedback-form__control-mark--checkbox"></span>
             <span class="feedback-form__control-label">Гора-Колокол</span>
           </label>
           <label class="feedback-form__label feedback-form__label--attractions" for="slide-park">
-            <input class="feedback-form__input visually-hidden" type="checkbox" id="slide-park" name="attractions"
-              value="slide-park" checked>
+            <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" type="checkbox"
+              id="slide-park" name="attractions" value="slide-park" checked>
             <span class="feedback-form__control-mark feedback-form__control-mark--checkbox"></span>
             <span class="feedback-form__control-label">Слайд-парк</span>
           </label>
           <label class="feedback-form__label feedback-form__label--attractions" for="red-rocks">
-            <input class="feedback-form__input visually-hidden" type="checkbox" id="red-rocks" name="attractions"
-              value="red-rocks">
+            <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" type="checkbox"
+              id="red-rocks" name="attractions" value="red-rocks">
             <span class="feedback-form__control-mark feedback-form__control-mark--checkbox"></span>
             <span class="feedback-form__control-label">Красные скалы</span>
           </label>
@@ -151,9 +149,9 @@
       </form>
     </main>
     <footer class="footer footer--form">
-      <a class="footer__hashtag-link"
+      <a class="footer__hashtag-link footer__hashtag-link--secondary"
         href="https://www.yandex.ru/search/?lr=10754&offline_search=1&text=%23visitsedona&clid=2196598&from=chromesearch">#visitsedona</a>
-      <ul class="footer__list">
+      <ul class="footer__list footer__list--secondary">
         <li class="footer__item">
           <a class="footer__social-link footer__social-link--vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте.</span>
@@ -193,7 +191,7 @@
       <div class="modal-window modal-window--valid-success">
         <h2 class="modal-window__title modal-window__title--valid-success">ваш отзыв отправлен!</h2>
         <p class="modal-window__text modal-window__text--valid-success">спасибо за ваше участие, ваш отзыв уже
-          поступил к нам.<br> в ближайшее время мы опубликуем его на сайте.</p>
+          поступил к нам.<br>в ближайшее время мы опубликуем его на сайте.</p>
         <div class="modal-window__button-container">
           <button class="button modal-window__button modal-window__button-success" type="button">закрыть окно</button>
         </div>
