@@ -11,7 +11,7 @@
 .page-header__logo-link {
   width: 185px;
   margin: 0 auto;
-  margin-bottom: -44px;
+  margin-bottom: -40px;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
@@ -19,6 +19,10 @@
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+.page-header__logo-image {
+  display: block;
 }
 
 .page-header__image {

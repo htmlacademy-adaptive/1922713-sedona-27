@@ -144,7 +144,6 @@
 }
 
 .footer__social-link--vk::after {
-  // content: url("../../img/footer/vk.svg");
   content: "";
   position: absolute;
   top: 12px;
@@ -155,12 +154,7 @@
   background-repeat: no-repeat;
 }
 
-// .footer__social-link--vk:active::after {
-//   opacity: 0.3;
-// }
-
 .footer__social-link--tlgm::after {
-  // content: url("../../img/footer/telegram.svg");
   content: "";
   position: absolute;
   top: 12px;
@@ -168,17 +162,9 @@
   bottom: 10px;
   left: 12px;
   background-image: url("../../img/footer/telegram.svg");
-
-  // background-repeat: no-repeat;
-  // background-position: center;
 }
 
-// .footer__social-link--tlgm:active::after {
-//   opacity: 0.3;
-// }
-
 .footer__social-link--yt::after {
-  // content: url("../../img/footer/youtube.svg");
   content: "";
   position: absolute;
   top: 12px;
@@ -186,13 +172,7 @@
   bottom: 10px;
   left: 12px;
   background-image: url("../../img/footer/youtube.svg");
-  // background-repeat: no-repeat;
-  // background-position: center;
 }
-
-// .footer__social-link--yt:active::after {
-//   opacity: 0.3;
-// }
 
 .footer__htmlacademy-link {
   @include fontsizes(14px, 21px, 400, $black);
