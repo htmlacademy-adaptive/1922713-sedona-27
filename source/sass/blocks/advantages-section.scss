@@ -345,9 +345,9 @@
 
 .advantages-section__text--has-icon-souvenirs {
   @media (max-width: $mobile-width-only) {
-    // br {
-    //   display: none;
-    // }
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -372,8 +372,14 @@
 }
 
 .advantages-section__text--has-line-road {
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    padding: 0 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -383,7 +389,8 @@
 
 .advantages-section__image {
   display: block;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 512px;
