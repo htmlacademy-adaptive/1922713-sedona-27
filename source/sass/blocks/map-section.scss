@@ -6,7 +6,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/map/map-mobile@2x.webp");
-    background-size: 640px auto;
+    background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
@@ -15,7 +15,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/map/map-tablet@2x.webp");
-      background-size: 1536px auto;
+      background-size: cover;
     }
   }
 
@@ -25,7 +25,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/map/map-desktop@2x.webp");
-      background-size: 2400px auto;
+      background-size: cover;
     }
   }
 }
