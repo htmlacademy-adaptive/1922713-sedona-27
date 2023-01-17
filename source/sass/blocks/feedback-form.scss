@@ -107,6 +107,7 @@
 }
 
 .feedback-form__label--person-information {
+  margin: 0;
   padding: 0 0 0 36px;
   text-transform: uppercase;
   border: none;
@@ -229,6 +230,7 @@
   @include fontsizes(18px, 26px, 700, $black);
   position: relative;
   display: block;
+  margin: 0;
   padding-bottom: 36px;
   padding-left: 81px;
 
